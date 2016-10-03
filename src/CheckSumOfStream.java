@@ -9,7 +9,9 @@ import java.io.InputStream;
 public class CheckSumOfStream {
 
     public static int checkSumOfStream(InputStream inputStream) throws IOException {
-
+        
+        // Paste your a code here
+        
         return -1;
     }
 
