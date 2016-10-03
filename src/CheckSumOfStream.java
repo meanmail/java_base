@@ -10,8 +10,6 @@ public class CheckSumOfStream {
 
     public static int checkSumOfStream(InputStream inputStream) throws IOException {
 
-        // Paste your code here
-
         return -1;
     }
 
@@ -21,6 +19,7 @@ public class CheckSumOfStream {
     private static byte[] testSet4 = new byte[]{-1, -1, -1, -1, -1, -1};
     private static byte[] testSet5 = new byte[]{0x33, 0x45, 0x01};
     private static byte[] testSet6 = new byte[]{};
+    private static byte[] testSet7 = new byte[]{-1};
 
     public static void main(String[] args) throws IOException {
 
@@ -30,5 +29,6 @@ public class CheckSumOfStream {
         Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet4)), 5397, "Test #4");
         Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet5)), 71, "Test #5");
         Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet6)), 0, "Test #6");
+        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet7)), 255, "Test #7");
     }
 }
