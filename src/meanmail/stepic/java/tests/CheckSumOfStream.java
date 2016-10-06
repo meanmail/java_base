@@ -1,6 +1,9 @@
+package meanmail.stepic.java.tests;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import static meanmail.stepic.java.tests.Assertions.*;
 
 /**
  * Created by meanmail on 30.09.2016.
@@ -25,12 +28,12 @@ public class CheckSumOfStream {
 
     public static void main(String[] args) throws IOException {
 
-        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet1)), 71, "Test #1");
-        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet2)), 931, "Test #2");
-        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet3)), 0, "Test #3");
-        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet4)), 5397, "Test #4");
-        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet5)), 71, "Test #5");
-        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet6)), 0, "Test #6");
-        Assertions.assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet7)), 255, "Test #7");
+        assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet1)), 71, "Test #1");
+        assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet2)), 931, "Test #2");
+        assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet3)), 0, "Test #3");
+        assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet4)), 5397, "Test #4");
+        assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet5)), 71, "Test #5");
+        assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet6)), 0, "Test #6");
+        assertEquals(checkSumOfStream(new ByteArrayInputStream(testSet7)), 255, "Test #7");
     }
 }
