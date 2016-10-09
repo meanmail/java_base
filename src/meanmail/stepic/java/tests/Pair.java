@@ -16,7 +16,7 @@ import static meanmail.stepic.java.tests.Assertions.*;
  * Для корректной проверки класс должен иметь пакетную видимость.
  */
 
-class Pair {
+class Pair<F, S> {
 
     /**
      * Проверочный метод, не редактируйте его, если точно не знаете для чего это делаете
@@ -52,6 +52,18 @@ class Pair {
 
         assertEquals( pair3.equals(pair4), false, "Test #4");
         assertEquals( pair4.equals(pair3), false, "Test #5"); // Проверка симметричности equals
+    }
+
+    private static <F, S> Pair<F, S> of(F first, S second) {
+        return null;
+    }
+
+    private S getSecond() {
+        return null;
+    }
+
+    private F getFirst() {
+        return null;
     }
 
 }
