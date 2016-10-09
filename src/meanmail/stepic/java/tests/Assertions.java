@@ -15,6 +15,14 @@ public class Assertions {
             System.out.printf("%s: Ok\n", msg);
     }
 
+    public static <T> void assertNotEquals(T value, T expected, String msg) {
+
+        if ((expected == null && value != null) || (expected != null && !expected.equals(value)))
+            System.out.printf("%s: Ok\n", msg);
+        else
+             System.out.printf("%s: Error! Unexpected %s.\n", msg, value);
+    }
+
     public static <T> void assertEquals(T[] value, T[] expected, String msg) {
 
         if (!Arrays.equals(value, expected))
