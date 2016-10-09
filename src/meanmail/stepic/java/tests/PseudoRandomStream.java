@@ -1,6 +1,5 @@
 package meanmail.stepic.java.tests;
 
-import java.util.PrimitiveIterator;
 import java.util.stream.IntStream;
 
 import static meanmail.stepic.java.tests.Assertions.assertEquals;
@@ -29,23 +28,17 @@ public class PseudoRandomStream {
 
         IntStream stream = pseudoRandomStream(13);
 
-        assertNotEquals(stream, null, "Test #1 [pseudoRandomStream(13) != null]");
+        assertNotEquals(stream, null, "Test #1 [stream = pseudoRandomStream(13)]");
 
-        if (stream == null)
-            return;
-
-        PrimitiveIterator.OfInt iterator = stream.iterator();
-
-        int counter = 0;
-
-        while (iterator.hasNext() && counter < 15) {
-
-            value.append(iterator.next()).append(" ");
-
-            counter++;
+        if (stream != null) {
+            stream = stream.limit(15);
+            assertNotEquals(stream, null, "Test #2 [stream.limit(15)]");
         }
 
-        assertEquals(value.toString(), expected, "Test #1");
+        if (stream != null) {
+            stream.forEach(v -> value.append(v).append(" "));
+            assertEquals(value.toString(), expected, "Test #3");
+        }
     }
 
     public static IntStream pseudoRandomStream(int seed) {
