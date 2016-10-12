@@ -39,6 +39,14 @@ public class Assertions {
             System.out.printf("%s: Ok\n", msg);
     }
 
+    public static void assertEquals(byte[] value, byte[] expected, String msg) {
+
+        if (!Arrays.equals(value, expected))
+            System.out.printf("%s: Error! Expected %s, got %s.\n", msg, Arrays.toString(expected), Arrays.toString(value));
+        else
+            System.out.printf("%s: Ok\n", msg);
+    }
+
 
     public static void assertEquals(Class<?> value, Class<?> expected, String msg) {
 
