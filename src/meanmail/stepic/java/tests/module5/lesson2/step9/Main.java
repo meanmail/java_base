@@ -34,7 +34,8 @@ public class Main {
     private static final PrintStream standartOut = System.out;
 
     private static byte[][][] testSet = new byte[][][]{{{65, 13, 10, 10, 13}, {65, 10, 10, 13}}, {{}, {}}, {{13, 10}, {10}},
-            {{10, 13}, {10, 13}}, {{13, 13, 13, 13, 13},{13, 13, 13, 13, 13}}, {{10, 10}, {10, 10}}, {{13, 13, 10}, {13, 10}}};
+            {{10, 13}, {10, 13}}, {{13, 13, 13, 13, 13},{13, 13, 13, 13, 13}}, {{10, 10}, {10, 10}}, {{13, 13, 10}, {13, 10}},
+            {{13, 65}, {13, 65}}};
 
     private static void test() throws IOException {
 
