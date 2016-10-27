@@ -25,4 +25,4 @@ Java. Базовый курс на stepik.org. Тесты для задач.
 - Попробуйте разобраться как работают данные тесты, они несложные
 - Добавьте свои. Буду рад Pull Request'ам.
 - Ну и у степика есть хороший плагин для IDEA. Тестов там нет, но зато удобно выполнять задания.
-https://drive.google.com/drive/folders/0B3r_Au4BpPbweXZCbm9LMGNkVTg Stepik Union
+[Stepik Union](https://plugins.jetbrains.com/plugin/8589?pr=idea_ce)
