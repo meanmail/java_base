@@ -14,6 +14,10 @@ public class MergeArrays {
         assertEquals(mergeArrays(new int[]{}, new int[]{}), new int[]{}, "Test #3");
         assertEquals(mergeArrays(new int[]{1, 1, 1}, new int[]{1, 1, 1}), new int[]{1, 1, 1, 1, 1, 1}, "Test #4");
         assertEquals(mergeArrays(new int[]{1, 2, 3}, new int[]{1, 2, 3}), new int[]{1, 1, 2, 2, 3, 3}, "Test #5");
+        assertEquals(mergeArrays(new int[]{6}, new int[]{1, 3, 5}), new int[]{1, 3, 5, 6}, "Test #6");
+        assertEquals(mergeArrays(new int[]{6}, new int[]{5, 5, 5, 5}), new int[]{5, 5, 5, 5, 6}, "Test #7");
+        assertEquals(mergeArrays(new int[]{1, 2, 3, 5}, new int[]{6}), new int[]{1, 2, 3, 5, 6}, "Test #8");
+        assertEquals(mergeArrays(new int[]{1, 2, 3, 5}, new int[]{}), new int[]{1, 2, 3, 5}, "Test #9");
     }
 
     public static int[] mergeArrays(int[] a1, int[] a2) {
