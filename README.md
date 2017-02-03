@@ -18,6 +18,8 @@ https://vyahhi.myjetbrains.com/youtrack/issues/IDEA
 
 Урок по использованию плагина https://stepik.org/lesson/36229
 
+Любые вопросы по использованию тестов или плагина можете задавать мне.
+
 # Запуск тестов
 
 - Запустите IDEA
