@@ -16,11 +16,17 @@ public class MainTest {
 
         assertEquals("Class Pair should be package-private", 0, pairClass.getModifiers());
 
-        Method getFirst = TestUtils.getMethod(pairClass, "getFirst", Modifier.PUBLIC);
-        Method getSecond = TestUtils.getMethod(pairClass, "getSecond", Modifier.PUBLIC);
-        TestUtils.getMethod(pairClass, "equals", Modifier.PUBLIC, Object.class);
-        TestUtils.getMethod(pairClass, "hashCode", Modifier.PUBLIC);
-        Method of = TestUtils.getMethod(pairClass, "of", Modifier.PUBLIC | Modifier.STATIC, Object.class, Object.class);
+        Method getFirst = TestUtils.getMethod(pairClass, "getFirst", Modifier.PUBLIC, Object.class);
+        Method getSecond = TestUtils.getMethod(pairClass, "getSecond", Modifier.PUBLIC, Object.class);
+        TestUtils.getMethod(pairClass, "equals", Modifier.PUBLIC, Boolean.TYPE, Object.class);
+        TestUtils.getMethod(pairClass, "hashCode", Modifier.PUBLIC, Integer.TYPE);
+        Method of = TestUtils.getMethod(pairClass,
+                "of",
+                Modifier.PUBLIC | Modifier.STATIC,
+                pairClass,
+                Object.class,
+                Object.class);
+
         TestUtils.getConstructor(pairClass, Modifier.PRIVATE);
 
         Object pair = TestUtils.invokeMethod(pairClass, of, 1, "hello");
