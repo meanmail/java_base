@@ -1,11 +1,11 @@
 // Don't edit this file
+
 import org.junit.Test;
 
 import java.math.BigInteger;
 
 import static java.math.BigInteger.ONE;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 /**
  * @author meanmail
