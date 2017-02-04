@@ -1,4 +1,5 @@
 // Don't edit this file
+
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -16,7 +17,7 @@ public class MainTest {
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outStream));
 
-        Main.main();
+        TestUtils.runMain(getClass().getClassLoader());
 
         assertEquals("It's alive! It's alive!", outStream.toString());
     }
