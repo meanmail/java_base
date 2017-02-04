@@ -1,6 +1,6 @@
 class Main {
     //Stepik code: start
-    public static final class ComplexNumber {
+    public final class ComplexNumber {
         private final double re;
         private final double im;
 

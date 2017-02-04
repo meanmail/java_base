@@ -1,19 +1,18 @@
 // Don't edit this file
-import org.junit.experimental.theories.DataPoints;
-import org.junit.experimental.theories.FromDataPoints;
-import org.junit.experimental.theories.Theories;
-import org.junit.experimental.theories.Theory;
-import org.junit.runner.RunWith;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 import static org.junit.Assert.assertEquals;
 
 /**
  * @author meanmail
  */
-@RunWith(Theories.class)
 public class MainTest {
-    @DataPoints("leaps")
-    public static final int[][] leaps = new int[][]{
+    private static final int[][] leaps = new int[][]{
             {1, 0},
             {4, 1},
             {100, 24},
@@ -21,10 +20,24 @@ public class MainTest {
             {2187, 530},
             {400, 97}
     };
+    private static Method leapYearCount;
+    private static Class<?> mainClass;
 
-    @Theory
-    public void leapYearCount(@FromDataPoints("leaps") int[] leap) throws Exception {
-        assertEquals(leap[1], Main.leapYearCount(leap[0]));
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
+        leapYearCount = TestUtils.getMethod(mainClass,
+                "leapYearCount",
+                Modifier.PUBLIC | Modifier.STATIC,
+                Integer.TYPE, Integer.TYPE);
+    }
+
+    @Test
+    public void leapYearCount() throws Exception {
+        for (int[] leap : leaps) {
+            String message = String.format("Main.leapYearCount(%s)", leap[0]);
+            assertEquals(message, leap[1], TestUtils.invokeMethod(mainClass, leapYearCount, leap[0]));
+        }
     }
 
 }

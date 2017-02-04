@@ -1,20 +1,19 @@
 // Don't edit this file
-import org.junit.experimental.theories.DataPoints;
-import org.junit.experimental.theories.FromDataPoints;
-import org.junit.experimental.theories.Theories;
-import org.junit.experimental.theories.Theory;
-import org.junit.runner.RunWith;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Arrays;
 
 import static org.junit.Assert.assertArrayEquals;
 
 /**
  * @author meanmail
  */
-@RunWith(Theories.class)
 public class MainTest {
-
-    @DataPoints("samples")
-    public static final int[][][] samples = new int[][][]{
+    private static final int[][][] samples = new int[][][]{
             {{0, 2, 4}, {1, 3, 5}, {0, 1, 2, 3, 4, 5}},
             {{}, {1, 3, 5}, {1, 3, 5}},
             {{}, {}, {}},
@@ -28,11 +27,33 @@ public class MainTest {
             {{1, 2, 3}, {4, 4}, {1, 2, 3, 4, 4}}
     };
 
-    @Theory
-    public void mergeArraysSample1(@FromDataPoints("samples") int[][] sample) throws Exception {
-        int[] array = Main.mergeArrays(sample[0], sample[1]);
+    private static final String MESSAGE_TEMPLATE = "Main.mergeArrays(%s, %s)\nExpected: %s\nActual: %s\n";
+    private static Method mergeArrays;
+    private static Class<?> mainClass;
 
-        assertArrayEquals(sample[2], array);
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
+        mergeArrays = TestUtils.getMethod(mainClass,
+                "mergeArrays",
+                Modifier.PUBLIC | Modifier.STATIC,
+                int[].class,
+                int[].class,
+                int[].class);
+    }
+
+    @Test
+    public void mergeArraysSample1() throws Exception {
+        for (int[][] sample : samples) {
+            int[] array = (int[]) TestUtils.invokeMethod(mainClass, mergeArrays, sample[0], sample[1]);
+
+            String message = String.format(MESSAGE_TEMPLATE,
+                    Arrays.toString(sample[0]),
+                    Arrays.toString(sample[1]),
+                    Arrays.toString(sample[2]),
+                    Arrays.toString(array));
+            assertArrayEquals(message, sample[2], array);
+        }
     }
 
 }

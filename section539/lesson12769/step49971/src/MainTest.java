@@ -1,47 +1,93 @@
 // Don't edit this file
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Modifier;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import static org.junit.Assert.*;
 
 /**
  * @author meanmail
  */
 public class MainTest {
-    @Test(timeout = 8000L)
-    public void sample1() {
-        Main.ComplexNumber a = new Main.ComplexNumber(1, 1);
-        Main.ComplexNumber b = new Main.ComplexNumber(1, 1);
+    private static final String MESSAGE_TEMPLATE_HASHCODE = "\nComplexNumber a = new ComplexNumber(%f, %f);\n" +
+            "ComplexNumber b = new ComplexNumber(%f, %f);\n" +
+            "a.hashCode() == b.hashCode()";
+    private static final String MESSAGE_TEMPLATE_EQUALS = "\nComplexNumber a = new ComplexNumber(%f, %f);\n" +
+            "ComplexNumber b = new ComplexNumber(%f, %f);\n" +
+            "a.equals(b)";
+    private static Constructor<?> constructor;
+    private static Class<?> mainClass;
 
-        assertEquals(a.hashCode(), b.hashCode());
-        assertEquals(a, b);
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
+        List<Class<?>> classes = Arrays.stream(mainClass.getDeclaredClasses())
+                .filter(clazz -> clazz.getSimpleName().equals("ComplexNumber"))
+                .collect(Collectors.toList());
+
+        if (classes.size() == 0) {
+            fail("Main.ComplexNumber did't found");
+        }
+        Class<?> complexNumberClass = classes.get(0);
+
+        constructor = TestUtils.getConstructor(complexNumberClass,
+                Modifier.PUBLIC,
+                mainClass,
+                Double.TYPE,
+                Double.TYPE);
     }
 
     @Test(timeout = 8000L)
-    public void sample2() {
-        Main.ComplexNumber a = new Main.ComplexNumber(1, 1);
-        Main.ComplexNumber b = new Main.ComplexNumber(1, 2);
+    public void sample1() throws IllegalAccessException, InstantiationException {
+        Object mainInstance = mainClass.newInstance();
 
-        assertNotEquals(a.hashCode(), b.hashCode());
-        assertNotEquals(a, b);
+        Object a = TestUtils.newInstance(constructor, mainInstance, 1, 1);
+        Object b = TestUtils.newInstance(constructor, mainInstance, 1, 1);
+
+        String message = String.format(MESSAGE_TEMPLATE_HASHCODE, 1.0, 1.0, 1.0, 1.0);
+        assertEquals(message, a.hashCode(), b.hashCode());
+        message = String.format(MESSAGE_TEMPLATE_EQUALS, 1.0, 1.0, 1.0, 1.0);
+        assertEquals(message, a, b);
     }
 
     @Test(timeout = 8000L)
-    public void sample3() {
-        Main.ComplexNumber a = new Main.ComplexNumber(1, 1);
-        Main.ComplexNumber b = new Main.ComplexNumber(42, 1);
+    public void sample2() throws IllegalAccessException, InstantiationException {
+        Object mainInstance = mainClass.newInstance();
 
-        assertNotEquals(a.hashCode(), b.hashCode());
-        assertNotEquals(a, b);
+        Object a = TestUtils.newInstance(constructor, mainInstance, 1, 1);
+        Object b = TestUtils.newInstance(constructor, mainInstance, 1, 2);
+
+        String message = String.format(MESSAGE_TEMPLATE_EQUALS, 1.0, 1.0, 1.0, 2.0);
+        assertNotEquals(message, a, b);
     }
 
     @Test(timeout = 8000L)
-    public void sample4() {
-        Main.ComplexNumber a = new Main.ComplexNumber(10.25, 1.69);
-        Main.ComplexNumber b = new Main.ComplexNumber(10.25, 1.69);
+    public void sample3() throws IllegalAccessException, InstantiationException {
+        Object mainInstance = mainClass.newInstance();
 
-        assertEquals(a.hashCode(), b.hashCode());
-        assertEquals(a, b);
+        Object a = TestUtils.newInstance(constructor, mainInstance, 1, 1);
+        Object b = TestUtils.newInstance(constructor, mainInstance, 42, 1);
+
+        String message = String.format(MESSAGE_TEMPLATE_EQUALS, 1.0, 1.0, 42.0, 1.0);
+        assertNotEquals(message, a, b);
+    }
+
+    @Test(timeout = 8000L)
+    public void sample4() throws IllegalAccessException, InstantiationException {
+        Object mainInstance = mainClass.newInstance();
+
+        Object a = TestUtils.newInstance(constructor, mainInstance, 10.25, 1.69);
+        Object b = TestUtils.newInstance(constructor, mainInstance, 10.25, 1.69);
+
+        String message = String.format(MESSAGE_TEMPLATE_HASHCODE, 10.25, 1.69, 10.25, 1.69);
+        assertEquals(message, a.hashCode(), b.hashCode());
+        message = String.format(MESSAGE_TEMPLATE_EQUALS, 10.25, 1.69, 10.25, 1.69);
+        assertEquals(message, a, b);
     }
 }

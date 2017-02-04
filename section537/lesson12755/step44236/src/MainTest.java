@@ -3,6 +3,7 @@
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
@@ -13,12 +14,13 @@ import static org.junit.Assert.assertEquals;
 public class MainTest {
 
     @Test
-    public void mainTest() {
-        ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outStream));
+    public void mainTest() throws IOException {
+        try (ByteArrayOutputStream outStream = new ByteArrayOutputStream()) {
+            System.setOut(new PrintStream(outStream));
 
-        TestUtils.runMain(getClass().getClassLoader());
+            TestUtils.runMain();
 
-        assertEquals("It's alive! It's alive!", outStream.toString());
+            assertEquals("It's alive! It's alive!", outStream.toString());
+        }
     }
 }

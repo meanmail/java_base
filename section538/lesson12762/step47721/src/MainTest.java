@@ -1,5 +1,10 @@
 // Don't edit this file
+
+import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,13 +12,13 @@ import static org.junit.Assert.assertEquals;
  * @author meanmail
  */
 public class MainTest {
+    private static final String MESSAGE_TEMPLATE = "Main.printTextPerRole(String[], String[])";
     private static final String[] sampleInputRoles1 = new String[]{
             "Городничий",
             "Аммос Федорович",
             "Артемий Филиппович",
             "Лука Лукич"
     };
-
     private static final String[] sampleInputTextLines1 = new String[]{
             "Городничий: Я пригласил вас, господа, с тем, чтобы сообщить вам пренеприятное известие: к нам едет ревизор.",
             "Аммос Федорович: Как ревизор?",
@@ -23,7 +28,6 @@ public class MainTest {
             "Артемий Филиппович: Вот не было заботы, так подай!",
             "Лука Лукич: Господи боже! еще и с секретным предписаньем!"
     };
-
     private static final String sampleOutput1 = "Городничий:\n" +
             "1) Я пригласил вас, господа, с тем, чтобы сообщить вам пренеприятное известие: к нам едет ревизор.\n" +
             "4) Ревизор из Петербурга, инкогнито. И еще с секретным предписаньем.\n" +
@@ -38,10 +42,22 @@ public class MainTest {
             "\n" +
             "Лука Лукич:\n" +
             "7) Господи боже! еще и с секретным предписаньем!\n\n";
+    private static Method printTextPerRole;
+    private static Class<?> mainClass;
+
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
+        printTextPerRole = TestUtils.getMethod(mainClass,
+                "printTextPerRole",
+                Modifier.PUBLIC | Modifier.STATIC,
+                String.class,
+                String[].class,
+                String[].class);
+    }
 
     @Test
     public void printTextPerRoleSample1() throws Exception {
-        assertEquals(sampleOutput1, Main.printTextPerRole(sampleInputRoles1, sampleInputTextLines1));
+        assertEquals(MESSAGE_TEMPLATE, sampleOutput1, TestUtils.invokeMethod(mainClass, printTextPerRole, sampleInputRoles1, sampleInputTextLines1));
     }
-
 }

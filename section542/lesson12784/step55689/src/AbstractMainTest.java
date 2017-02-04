@@ -38,7 +38,7 @@ public abstract class AbstractMainTest {
         System.setIn(new ByteArrayInputStream(input.getBytes()));
         outStream.reset();
 
-        TestUtils.runMain(getClass().getClassLoader());
+        TestUtils.runMain();
 
         String actual = outStream.toString().replace(",", ".");
         String message = String.format("Expected %s but was %s", output, actual);
