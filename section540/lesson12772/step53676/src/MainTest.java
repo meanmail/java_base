@@ -1,31 +1,33 @@
 // Don't edit this file
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import java.util.Scanner;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
-import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
 /**
  * @author meanmail
  */
 public class MainTest {
-    @Test
-    public void getCallerClassAndMethodNameNotNull() throws Exception {
-        ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outStream));
+    private static Method getCallerClassAndMethodName;
+    private static Class<?> mainClass;
 
-        Main.main();
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
 
-        String output = new String(outStream.toByteArray());
-        Scanner scanner = new Scanner(output);
+        getCallerClassAndMethodName = TestUtils.getMethod(mainClass,
+                "getCallerClassAndMethodName",
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
+                String.class);
+    }
 
-        assertTrue(scanner.hasNextLine());
-        assertEquals("MainTest#getCallerClassAndMethodNameNotNull", scanner.nextLine());
-        assertTrue(scanner.hasNextLine());
-        assertEquals("Main#main", scanner.nextLine());
+    @Test(timeout = 8000)
+    public void getCallerClassAndMethodNameNotNull1() throws Exception {
+        String classMethod = (String) TestUtils.invokeMethod(mainClass, getCallerClassAndMethodName);
+        assertEquals("sun.reflect.NativeMethodAccessorImpl#invoke", classMethod);
     }
 }
