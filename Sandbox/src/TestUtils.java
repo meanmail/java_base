@@ -1,7 +1,5 @@
 // Don't edit this file
 
-package meanmail.test.utils;
-
 import com.sun.istack.internal.NotNull;
 
 import java.io.ByteArrayOutputStream;

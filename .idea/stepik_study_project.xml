@@ -11,7 +11,7 @@
                 <option name="alias" value="compscicenter" />
                 <option name="avatar" value="https://stepik.org/media/users/avatar/736914?1486127608" />
                 <option name="cover" value="/media/users/cover/736914" />
-                <option name="details" value="&lt;p&gt;&lt;a href=&quot;http://compscicenter.ru&quot;&gt;http://compscicenter.ru&lt;/a&gt;&lt;/p&gt;&#13;&#10;&lt;p&gt;Computer Science Center предлагает бесплатные двух- или трехгодичные очные вечерние курсы в Санкт-Петербурге.&lt;/p&gt;&#13;&#10;&lt;p&gt;Основная цель Computer Science Center – дать возможность желающим получить востребованные современной наукой и промышленностью знания в дополнение к университетскому образованию в ИТ.&lt;/p&gt;&#13;&#10;&lt;p&gt;Computer Science Center – это совместная инициатива &lt;a href=&quot;http://compsciclub.ru/&quot;&gt;Computer Science клуба при ПОМИ РАН&lt;/a&gt;, компании &lt;a href=&quot;http://jetbrains.ru//&quot;&gt;JetBrains&lt;/a&gt; и &lt;a href=&quot;http://shad.yandex.ru/&quot;&gt;Школы анализа данных&lt;/a&gt;.&lt;/p&gt;" />
+                <option name="details" value="&lt;p&gt;&lt;a href=&quot;http://compscicenter.ru&quot;&gt;http://compscicenter.ru&lt;/a&gt;&lt;/p&gt;&#10;&lt;p&gt;Computer Science Center предлагает бесплатные двух- или трехгодичные очные вечерние курсы в Санкт-Петербурге.&lt;/p&gt;&#10;&lt;p&gt;Основная цель Computer Science Center – дать возможность желающим получить востребованные современной наукой и промышленностью знания в дополнение к университетскому образованию в ИТ.&lt;/p&gt;&#10;&lt;p&gt;Computer Science Center – это совместная инициатива &lt;a href=&quot;http://compsciclub.ru/&quot;&gt;Computer Science клуба при ПОМИ РАН&lt;/a&gt;, компании &lt;a href=&quot;http://jetbrains.ru//&quot;&gt;JetBrains&lt;/a&gt; и &lt;a href=&quot;http://shad.yandex.ru/&quot;&gt;Школы анализа данных&lt;/a&gt;.&lt;/p&gt;" />
                 <option name="firstName" value="Computer Science" />
                 <option name="guest" value="false" />
                 <option name="id" value="736914" />
@@ -101,7 +101,7 @@
                   <option value="78-187-1" />
                 </list>
               </option>
-              <option name="discussionsCount" value="2850" />
+              <option name="discussionsCount" value="2855" />
               <option name="enabled" value="true" />
               <option name="endDate" />
               <option name="endDateSource" />
@@ -155,7 +155,7 @@
               <option name="language" value="ru" />
               <option name="lastDeadline" />
               <option name="lastStep" value="78-187" />
-              <option name="learnersCount" value="21546" />
+              <option name="learnersCount" value="21562" />
               <option name="learnersGroup" />
               <option name="moderatorsGroup" />
               <option name="owner" value="736914" />
@@ -282,7 +282,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="9284" />
+                          <option name="passedBy" value="9297" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -327,7 +327,7 @@
                           <option name="timeToComplete" value="1551" />
                           <option name="title" value="Первый контакт — Hello World" />
                           <option name="updateDate" value="2016-11-11T12:12:52Z" />
-                          <option name="viewedBy" value="14185" />
+                          <option name="viewedBy" value="14197" />
                           <option name="vote" value="76-12755" />
                         </Lesson>
                       </option>
@@ -382,7 +382,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.3969057318026581" />
+                                <option name="correctRatio" value="0.39679605668515094" />
                                 <option name="createDate" value="2015-09-10T13:16:35Z" />
                                 <option name="discussionProxy" value="77-44236-1" />
                                 <option name="discussionThreads">
@@ -398,7 +398,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12755" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="9284" />
+                                <option name="passedBy" value="9297" />
                                 <option name="position" value="14" />
                                 <option name="progress" value="77-44236" />
                                 <option name="session" />
@@ -412,7 +412,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-09-15T09:40:38Z" />
-                                <option name="viewedBy" value="10380" />
+                                <option name="viewedBy" value="10393" />
                                 <option name="worth" value="3" />
                               </Step>
                             </option>
@@ -570,7 +570,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="3306" />
+                          <option name="passedBy" value="3316" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -613,10 +613,10 @@
                           </option>
                           <option name="teachersGroup" />
                           <option name="testersGroup" />
-                          <option name="timeToComplete" value="5197" />
+                          <option name="timeToComplete" value="5195" />
                           <option name="title" value="Примитивные типы" />
                           <option name="updateDate" value="2016-11-11T12:13:18Z" />
-                          <option name="viewedBy" value="9759" />
+                          <option name="viewedBy" value="9775" />
                           <option name="vote" value="76-12759" />
                         </Lesson>
                       </option>
@@ -679,7 +679,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.21877991193925084" />
+                                <option name="correctRatio" value="0.2184577209391105" />
                                 <option name="createDate" value="2015-09-20T10:29:56Z" />
                                 <option name="discussionProxy" value="77-47519-1" />
                                 <option name="discussionThreads">
@@ -695,7 +695,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12759" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="6309" />
+                                <option name="passedBy" value="6319" />
                                 <option name="position" value="6" />
                                 <option name="progress" value="77-47519" />
                                 <option name="session" />
@@ -709,7 +709,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-29T22:42:47Z" />
-                                <option name="viewedBy" value="8423" />
+                                <option name="viewedBy" value="8436" />
                                 <option name="worth" value="5" />
                               </Step>
                             </option>
@@ -801,7 +801,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.1800968736239542" />
+                                <option name="correctRatio" value="0.18019418614883695" />
                                 <option name="createDate" value="2015-09-20T10:48:22Z" />
                                 <option name="discussionProxy" value="77-47533-1" />
                                 <option name="discussionThreads">
@@ -817,7 +817,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12759" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="5791" />
+                                <option name="passedBy" value="5799" />
                                 <option name="position" value="8" />
                                 <option name="progress" value="77-47533" />
                                 <option name="session" />
@@ -831,7 +831,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-09T16:34:29Z" />
-                                <option name="viewedBy" value="7627" />
+                                <option name="viewedBy" value="7639" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -915,7 +915,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.17750734368443138" />
+                                <option name="correctRatio" value="0.17759276451738493" />
                                 <option name="createDate" value="2015-09-20T11:26:29Z" />
                                 <option name="discussionProxy" value="77-47538-1" />
                                 <option name="discussionThreads">
@@ -931,7 +931,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12759" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="5569" />
+                                <option name="passedBy" value="5577" />
                                 <option name="position" value="12" />
                                 <option name="progress" value="77-47538" />
                                 <option name="session" />
@@ -945,7 +945,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-08T19:43:04Z" />
-                                <option name="viewedBy" value="7068" />
+                                <option name="viewedBy" value="7077" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -1029,7 +1029,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.1549862241504893" />
+                                <option name="correctRatio" value="0.15513368137952854" />
                                 <option name="createDate" value="2015-09-19T14:05:02Z" />
                                 <option name="discussionProxy" value="77-47316-1" />
                                 <option name="discussionThreads">
@@ -1045,7 +1045,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12759" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="4600" />
+                                <option name="passedBy" value="4608" />
                                 <option name="position" value="15" />
                                 <option name="progress" value="77-47316" />
                                 <option name="session" />
@@ -1059,7 +1059,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-29T22:38:05Z" />
-                                <option name="viewedBy" value="6906" />
+                                <option name="viewedBy" value="6916" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -1159,7 +1159,7 @@
                             </list>
                           </option>
                           <option name="discussionsCount" value="111" />
-                          <option name="epicCount" value="132" />
+                          <option name="epicCount" value="133" />
                           <option name="featured" value="false" />
                           <option name="followers">
                             <list />
@@ -1169,7 +1169,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="4305" />
+                          <option name="passedBy" value="4311" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -1209,7 +1209,7 @@
                           <option name="timeToComplete" value="3200" />
                           <option name="title" value="Преобразование типов" />
                           <option name="updateDate" value="2016-11-11T12:13:28Z" />
-                          <option name="viewedBy" value="6841" />
+                          <option name="viewedBy" value="6851" />
                           <option name="vote" value="76-12760" />
                         </Lesson>
                       </option>
@@ -1268,7 +1268,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.16921307704944966" />
+                                <option name="correctRatio" value="0.1693813214238802" />
                                 <option name="createDate" value="2015-09-20T17:24:32Z" />
                                 <option name="discussionProxy" value="77-47682-1" />
                                 <option name="discussionThreads">
@@ -1284,7 +1284,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12760" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="4821" />
+                                <option name="passedBy" value="4828" />
                                 <option name="position" value="3" />
                                 <option name="progress" value="77-47682" />
                                 <option name="session" />
@@ -1298,7 +1298,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-25T00:21:48Z" />
-                                <option name="viewedBy" value="6034" />
+                                <option name="viewedBy" value="6044" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -1390,7 +1390,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.14349873009973363" />
+                                <option name="correctRatio" value="0.1435689527110671" />
                                 <option name="createDate" value="2015-09-19T14:47:33Z" />
                                 <option name="discussionProxy" value="77-47329-1" />
                                 <option name="discussionThreads">
@@ -1406,7 +1406,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12760" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="4305" />
+                                <option name="passedBy" value="4311" />
                                 <option name="position" value="9" />
                                 <option name="progress" value="77-47329" />
                                 <option name="session" />
@@ -1420,7 +1420,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-08T20:05:50Z" />
-                                <option name="viewedBy" value="5719" />
+                                <option name="viewedBy" value="5731" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -1513,8 +1513,8 @@
                               <option value="76-12761-1" />
                             </list>
                           </option>
-                          <option name="discussionsCount" value="101" />
-                          <option name="epicCount" value="123" />
+                          <option name="discussionsCount" value="102" />
+                          <option name="epicCount" value="124" />
                           <option name="featured" value="false" />
                           <option name="followers">
                             <list />
@@ -1524,7 +1524,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="3847" />
+                          <option name="passedBy" value="3851" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -1565,7 +1565,7 @@
                           <option name="timeToComplete" value="3409" />
                           <option name="title" value="Массивы и строки" />
                           <option name="updateDate" value="2016-11-11T12:13:39Z" />
-                          <option name="viewedBy" value="6023" />
+                          <option name="viewedBy" value="6035" />
                           <option name="vote" value="76-12761" />
                         </Lesson>
                       </option>
@@ -1620,7 +1620,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.18334289623515912" />
+                                <option name="correctRatio" value="0.18345831495368328" />
                                 <option name="createDate" value="2015-09-19T15:09:27Z" />
                                 <option name="discussionProxy" value="77-47333-1" />
                                 <option name="discussionThreads">
@@ -1629,14 +1629,14 @@
                                     <option value="77-47333-2" />
                                   </list>
                                 </option>
-                                <option name="discussionsCount" value="75" />
+                                <option name="discussionsCount" value="76" />
                                 <option name="hasSubmissionsRestrictions" value="false" />
                                 <option name="id" value="47333" />
                                 <option name="instruction" />
                                 <option name="instructionType" />
                                 <option name="lesson" value="12761" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="3847" />
+                                <option name="passedBy" value="3851" />
                                 <option name="position" value="10" />
                                 <option name="progress" value="77-47333" />
                                 <option name="session" />
@@ -1650,7 +1650,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-10-22T16:07:22Z" />
-                                <option name="viewedBy" value="5333" />
+                                <option name="viewedBy" value="5341" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -1744,7 +1744,7 @@
                               <option value="76-12762-1" />
                             </list>
                           </option>
-                          <option name="discussionsCount" value="319" />
+                          <option name="discussionsCount" value="320" />
                           <option name="epicCount" value="148" />
                           <option name="featured" value="false" />
                           <option name="followers">
@@ -1755,7 +1755,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="2680" />
+                          <option name="passedBy" value="2682" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -1793,10 +1793,10 @@
                           </option>
                           <option name="teachersGroup" />
                           <option name="testersGroup" />
-                          <option name="timeToComplete" value="7901" />
+                          <option name="timeToComplete" value="7908" />
                           <option name="title" value="Управляющие конструкции: условные операторы и циклы" />
                           <option name="updateDate" value="2016-11-11T12:13:54Z" />
-                          <option name="viewedBy" value="5500" />
+                          <option name="viewedBy" value="5508" />
                           <option name="vote" value="76-12762" />
                         </Lesson>
                       </option>
@@ -1855,7 +1855,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.21254949130456574" />
+                                <option name="correctRatio" value="0.2126189283925889" />
                                 <option name="createDate" value="2015-09-19T15:32:11Z" />
                                 <option name="discussionProxy" value="77-47334-1" />
                                 <option name="discussionThreads">
@@ -1871,7 +1871,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12762" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="4031" />
+                                <option name="passedBy" value="4035" />
                                 <option name="position" value="8" />
                                 <option name="progress" value="77-47334" />
                                 <option name="session" />
@@ -1885,7 +1885,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-09-19T15:34:58Z" />
-                                <option name="viewedBy" value="4882" />
+                                <option name="viewedBy" value="4889" />
                                 <option name="worth" value="5" />
                               </Step>
                             </option>
@@ -1964,7 +1964,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.21811210104883275" />
+                                <option name="correctRatio" value="0.21816542709037637" />
                                 <option name="createDate" value="2015-09-19T16:09:26Z" />
                                 <option name="discussionProxy" value="77-47347-1" />
                                 <option name="discussionThreads">
@@ -1980,7 +1980,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12762" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="3636" />
+                                <option name="passedBy" value="3640" />
                                 <option name="position" value="9" />
                                 <option name="progress" value="77-47347" />
                                 <option name="session" />
@@ -1994,7 +1994,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-25T01:37:24Z" />
-                                <option name="viewedBy" value="4720" />
+                                <option name="viewedBy" value="4726" />
                                 <option name="worth" value="5" />
                               </Step>
                             </option>
@@ -2078,7 +2078,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.11868831062892568" />
+                                <option name="correctRatio" value="0.1186972649084906" />
                                 <option name="createDate" value="2015-09-20T19:11:49Z" />
                                 <option name="discussionProxy" value="77-47721-1" />
                                 <option name="discussionThreads">
@@ -2087,14 +2087,14 @@
                                     <option value="77-47721-2" />
                                   </list>
                                 </option>
-                                <option name="discussionsCount" value="209" />
+                                <option name="discussionsCount" value="210" />
                                 <option name="hasSubmissionsRestrictions" value="false" />
                                 <option name="id" value="47721" />
                                 <option name="instruction" />
                                 <option name="instructionType" />
                                 <option name="lesson" value="12762" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="2680" />
+                                <option name="passedBy" value="2682" />
                                 <option name="position" value="10" />
                                 <option name="progress" value="77-47721" />
                                 <option name="session" />
@@ -2108,7 +2108,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-30T09:15:25Z" />
-                                <option name="viewedBy" value="4738" />
+                                <option name="viewedBy" value="4742" />
                                 <option name="worth" value="7" />
                               </Step>
                             </option>
@@ -2263,7 +2263,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="2841" />
+                          <option name="passedBy" value="2842" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -2306,7 +2306,7 @@
                           <option name="timeToComplete" value="4038" />
                           <option name="title" value="Объявление класса" />
                           <option name="updateDate" value="2016-11-11T12:14:35Z" />
-                          <option name="viewedBy" value="4472" />
+                          <option name="viewedBy" value="4476" />
                           <option name="vote" value="76-12766" />
                         </Lesson>
                       </option>
@@ -2356,7 +2356,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.16283524904214558" />
+                                <option name="correctRatio" value="0.16285379868057034" />
                                 <option name="createDate" value="2015-09-26T19:21:40Z" />
                                 <option name="discussionProxy" value="77-49992-1" />
                                 <option name="discussionThreads">
@@ -2372,7 +2372,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12766" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="2841" />
+                                <option name="passedBy" value="2842" />
                                 <option name="position" value="12" />
                                 <option name="progress" value="77-49992" />
                                 <option name="session" />
@@ -2386,7 +2386,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-14T21:27:41Z" />
-                                <option name="viewedBy" value="4088" />
+                                <option name="viewedBy" value="4089" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -2493,7 +2493,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="2696" />
+                          <option name="passedBy" value="2698" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -2583,7 +2583,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.22604859928803592" />
+                                <option name="correctRatio" value="0.22609839108910892" />
                                 <option name="createDate" value="2015-09-26T18:23:45Z" />
                                 <option name="discussionProxy" value="77-49971-1" />
                                 <option name="discussionThreads">
@@ -2599,7 +2599,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12769" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="2696" />
+                                <option name="passedBy" value="2698" />
                                 <option name="position" value="9" />
                                 <option name="progress" value="77-49971" />
                                 <option name="session" />
@@ -2613,7 +2613,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-14T21:42:07Z" />
-                                <option name="viewedBy" value="3604" />
+                                <option name="viewedBy" value="3606" />
                                 <option name="worth" value="5" />
                               </Step>
                             </option>
@@ -2757,7 +2757,7 @@
                           <option name="timeToComplete" value="9636" />
                           <option name="title" value="Абстрактные классы и интерфейсы" />
                           <option name="updateDate" value="2016-11-11T12:14:56Z" />
-                          <option name="viewedBy" value="3847" />
+                          <option name="viewedBy" value="3849" />
                           <option name="vote" value="76-14513" />
                         </Lesson>
                       </option>
@@ -2837,7 +2837,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-15T21:07:19Z" />
-                                <option name="viewedBy" value="3402" />
+                                <option name="viewedBy" value="3404" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -2916,7 +2916,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.16090407641598278" />
+                                <option name="correctRatio" value="0.16096051658034574" />
                                 <option name="createDate" value="2015-09-26T20:12:41Z" />
                                 <option name="discussionProxy" value="77-50005-1" />
                                 <option name="discussionThreads">
@@ -2932,7 +2932,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="14513" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="2199" />
+                                <option name="passedBy" value="2200" />
                                 <option name="position" value="8" />
                                 <option name="progress" value="77-50005" />
                                 <option name="session" />
@@ -2946,7 +2946,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-16T23:09:34Z" />
-                                <option name="viewedBy" value="3168" />
+                                <option name="viewedBy" value="3169" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -3055,7 +3055,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-24T23:00:34Z" />
-                                <option name="viewedBy" value="3147" />
+                                <option name="viewedBy" value="3150" />
                                 <option name="worth" value="7" />
                               </Step>
                             </option>
@@ -3196,7 +3196,7 @@
                               <option value="76-12772-1" />
                             </list>
                           </option>
-                          <option name="discussionsCount" value="90" />
+                          <option name="discussionsCount" value="92" />
                           <option name="epicCount" value="62" />
                           <option name="featured" value="false" />
                           <option name="followers">
@@ -3207,7 +3207,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="1966" />
+                          <option name="passedBy" value="1970" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -3245,10 +3245,10 @@
                           </option>
                           <option name="teachersGroup" />
                           <option name="testersGroup" />
-                          <option name="timeToComplete" value="4744" />
+                          <option name="timeToComplete" value="4745" />
                           <option name="title" value="Знакомство с исключениями" />
                           <option name="updateDate" value="2016-11-11T12:15:14Z" />
-                          <option name="viewedBy" value="3648" />
+                          <option name="viewedBy" value="3650" />
                           <option name="vote" value="76-12772" />
                         </Lesson>
                       </option>
@@ -3298,7 +3298,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.3577830893337317" />
+                                <option name="correctRatio" value="0.35772842450439707" />
                                 <option name="createDate" value="2015-10-03T19:24:12Z" />
                                 <option name="discussionProxy" value="77-53596-1" />
                                 <option name="discussionThreads">
@@ -3314,7 +3314,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12772" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="2281" />
+                                <option name="passedBy" value="2286" />
                                 <option name="position" value="9" />
                                 <option name="progress" value="77-53596" />
                                 <option name="session" />
@@ -3328,7 +3328,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-11T20:52:54Z" />
-                                <option name="viewedBy" value="2797" />
+                                <option name="viewedBy" value="2802" />
                                 <option name="worth" value="4" />
                               </Step>
                             </option>
@@ -3407,7 +3407,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.15376289775597085" />
+                                <option name="correctRatio" value="0.15400691842029404" />
                                 <option name="createDate" value="2015-10-04T09:26:58Z" />
                                 <option name="discussionProxy" value="77-53676-1" />
                                 <option name="discussionThreads">
@@ -3416,14 +3416,14 @@
                                     <option value="77-53676-2" />
                                   </list>
                                 </option>
-                                <option name="discussionsCount" value="52" />
+                                <option name="discussionsCount" value="54" />
                                 <option name="hasSubmissionsRestrictions" value="false" />
                                 <option name="id" value="53676" />
                                 <option name="instruction" />
                                 <option name="instructionType" />
                                 <option name="lesson" value="12772" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1966" />
+                                <option name="passedBy" value="1970" />
                                 <option name="position" value="10" />
                                 <option name="progress" value="77-53676" />
                                 <option name="session" />
@@ -3437,7 +3437,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-22T21:19:53Z" />
-                                <option name="viewedBy" value="2762" />
+                                <option name="viewedBy" value="2767" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -3542,7 +3542,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="1741" />
+                          <option name="passedBy" value="1743" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -3577,10 +3577,10 @@
                           </option>
                           <option name="teachersGroup" />
                           <option name="testersGroup" />
-                          <option name="timeToComplete" value="4747" />
+                          <option name="timeToComplete" value="4748" />
                           <option name="title" value="Обработка исключений. Try-catch" />
                           <option name="updateDate" value="2016-11-11T12:15:27Z" />
-                          <option name="viewedBy" value="2895" />
+                          <option name="viewedBy" value="2899" />
                           <option name="vote" value="76-12773" />
                         </Lesson>
                       </option>
@@ -3630,7 +3630,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.06252085882745578" />
+                                <option name="correctRatio" value="0.06255036540973129" />
                                 <option name="createDate" value="2015-10-03T20:44:51Z" />
                                 <option name="discussionProxy" value="77-53606-1" />
                                 <option name="discussionThreads">
@@ -3646,7 +3646,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12773" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1741" />
+                                <option name="passedBy" value="1743" />
                                 <option name="position" value="7" />
                                 <option name="progress" value="77-53606" />
                                 <option name="session" />
@@ -3660,7 +3660,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-18T18:19:29Z" />
-                                <option name="viewedBy" value="2597" />
+                                <option name="viewedBy" value="2600" />
                                 <option name="worth" value="8" />
                               </Step>
                             </option>
@@ -3751,8 +3751,8 @@
                               <option value="76-12774-1" />
                             </list>
                           </option>
-                          <option name="discussionsCount" value="198" />
-                          <option name="epicCount" value="86" />
+                          <option name="discussionsCount" value="199" />
+                          <option name="epicCount" value="87" />
                           <option name="featured" value="false" />
                           <option name="followers">
                             <list />
@@ -3762,7 +3762,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="1383" />
+                          <option name="passedBy" value="1384" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -3802,7 +3802,7 @@
                           <option name="timeToComplete" value="9616" />
                           <option name="title" value="Логирование" />
                           <option name="updateDate" value="2016-11-11T12:15:40Z" />
-                          <option name="viewedBy" value="2827" />
+                          <option name="viewedBy" value="2830" />
                           <option name="vote" value="76-12774" />
                         </Lesson>
                       </option>
@@ -3882,7 +3882,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-22T21:39:20Z" />
-                                <option name="viewedBy" value="2376" />
+                                <option name="viewedBy" value="2378" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -3961,7 +3961,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.09829381507966378" />
+                                <option name="correctRatio" value="0.09820254274441034" />
                                 <option name="createDate" value="2015-10-04T20:05:50Z" />
                                 <option name="discussionProxy" value="77-53996-1" />
                                 <option name="discussionThreads">
@@ -3970,14 +3970,14 @@
                                     <option value="77-53996-2" />
                                   </list>
                                 </option>
-                                <option name="discussionsCount" value="137" />
+                                <option name="discussionsCount" value="138" />
                                 <option name="hasSubmissionsRestrictions" value="false" />
                                 <option name="id" value="53996" />
                                 <option name="instruction" />
                                 <option name="instructionType" />
                                 <option name="lesson" value="12774" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1383" />
+                                <option name="passedBy" value="1384" />
                                 <option name="position" value="9" />
                                 <option name="progress" value="77-53996" />
                                 <option name="session" />
@@ -3991,7 +3991,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2016-09-26T08:54:53Z" />
-                                <option name="viewedBy" value="2377" />
+                                <option name="viewedBy" value="2380" />
                                 <option name="worth" value="7" />
                               </Step>
                             </option>
@@ -4134,7 +4134,7 @@
                             </list>
                           </option>
                           <option name="discussionsCount" value="158" />
-                          <option name="epicCount" value="49" />
+                          <option name="epicCount" value="50" />
                           <option name="featured" value="false" />
                           <option name="followers">
                             <list />
@@ -4144,7 +4144,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="1412" />
+                          <option name="passedBy" value="1414" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -4184,7 +4184,7 @@
                           <option name="timeToComplete" value="6500" />
                           <option name="title" value="Потоки байт" />
                           <option name="updateDate" value="2016-11-11T12:16:06Z" />
-                          <option name="viewedBy" value="2428" />
+                          <option name="viewedBy" value="2430" />
                           <option name="vote" value="76-12783" />
                         </Lesson>
                       </option>
@@ -4234,7 +4234,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.2804858558414576" />
+                                <option name="correctRatio" value="0.2805364841130449" />
                                 <option name="createDate" value="2015-10-10T15:13:59Z" />
                                 <option name="discussionProxy" value="77-55630-1" />
                                 <option name="discussionThreads">
@@ -4250,7 +4250,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12783" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1643" />
+                                <option name="passedBy" value="1644" />
                                 <option name="position" value="8" />
                                 <option name="progress" value="77-55630" />
                                 <option name="session" />
@@ -4264,7 +4264,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-12T19:57:37Z" />
-                                <option name="viewedBy" value="2142" />
+                                <option name="viewedBy" value="2145" />
                                 <option name="worth" value="4" />
                               </Step>
                             </option>
@@ -4343,7 +4343,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.11940411948012465" />
+                                <option name="correctRatio" value="0.11941998177953234" />
                                 <option name="createDate" value="2015-10-10T15:58:06Z" />
                                 <option name="discussionProxy" value="77-55646-1" />
                                 <option name="discussionThreads">
@@ -4359,7 +4359,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12783" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1412" />
+                                <option name="passedBy" value="1414" />
                                 <option name="position" value="9" />
                                 <option name="progress" value="77-55646" />
                                 <option name="session" />
@@ -4373,7 +4373,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-31T10:45:48Z" />
-                                <option name="viewedBy" value="2099" />
+                                <option name="viewedBy" value="2101" />
                                 <option name="worth" value="7" />
                               </Step>
                             </option>
@@ -4467,7 +4467,7 @@
                             </list>
                           </option>
                           <option name="discussionsCount" value="110" />
-                          <option name="epicCount" value="47" />
+                          <option name="epicCount" value="48" />
                           <option name="featured" value="false" />
                           <option name="followers">
                             <list />
@@ -4477,7 +4477,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="1433" />
+                          <option name="passedBy" value="1435" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -4521,7 +4521,7 @@
                           <option name="timeToComplete" value="5413" />
                           <option name="title" value="Потоки символов" />
                           <option name="updateDate" value="2016-11-11T12:16:21Z" />
-                          <option name="viewedBy" value="2259" />
+                          <option name="viewedBy" value="2261" />
                           <option name="vote" value="76-12784" />
                         </Lesson>
                       </option>
@@ -4571,7 +4571,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.2492483463619964" />
+                                <option name="correctRatio" value="0.24951179209854288" />
                                 <option name="createDate" value="2015-10-10T17:12:50Z" />
                                 <option name="discussionProxy" value="77-55673-1" />
                                 <option name="discussionThreads">
@@ -4587,7 +4587,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12784" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1560" />
+                                <option name="passedBy" value="1561" />
                                 <option name="position" value="12" />
                                 <option name="progress" value="77-55673" />
                                 <option name="session" />
@@ -4601,7 +4601,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-11-03T22:18:57Z" />
-                                <option name="viewedBy" value="1919" />
+                                <option name="viewedBy" value="1923" />
                                 <option name="worth" value="5" />
                               </Step>
                             </option>
@@ -4693,7 +4693,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.20906492445896285" />
+                                <option name="correctRatio" value="0.20919477693144722" />
                                 <option name="createDate" value="2015-10-10T17:40:07Z" />
                                 <option name="discussionProxy" value="77-55689-1" />
                                 <option name="discussionThreads">
@@ -4709,7 +4709,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12784" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1433" />
+                                <option name="passedBy" value="1435" />
                                 <option name="position" value="13" />
                                 <option name="progress" value="77-55689" />
                                 <option name="session" />
@@ -4723,7 +4723,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-10T17:46:23Z" />
-                                <option name="viewedBy" value="1902" />
+                                <option name="viewedBy" value="1905" />
                                 <option name="worth" value="5" />
                               </Step>
                             </option>
@@ -4821,7 +4821,7 @@
                             </list>
                           </option>
                           <option name="discussionsCount" value="59" />
-                          <option name="epicCount" value="43" />
+                          <option name="epicCount" value="44" />
                           <option name="featured" value="false" />
                           <option name="followers">
                             <list />
@@ -4870,7 +4870,7 @@
                           <option name="timeToComplete" value="3250" />
                           <option name="title" value="Продвинутые возможности" />
                           <option name="updateDate" value="2016-11-11T12:16:34Z" />
-                          <option name="viewedBy" value="2240" />
+                          <option name="viewedBy" value="2244" />
                           <option name="vote" value="76-12785" />
                         </Lesson>
                       </option>
@@ -4920,7 +4920,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.14134411708068553" />
+                                <option name="correctRatio" value="0.14122174122174122" />
                                 <option name="createDate" value="2015-10-10T18:52:17Z" />
                                 <option name="discussionProxy" value="77-55715-1" />
                                 <option name="discussionThreads">
@@ -4950,7 +4950,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-25T20:42:20Z" />
-                                <option name="viewedBy" value="1928" />
+                                <option name="viewedBy" value="1930" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -5143,10 +5143,10 @@
                           </option>
                           <option name="teachersGroup" />
                           <option name="testersGroup" />
-                          <option name="timeToComplete" value="4531" />
+                          <option name="timeToComplete" value="4532" />
                           <option name="title" value="Generics" />
                           <option name="updateDate" value="2016-11-11T12:16:52Z" />
-                          <option name="viewedBy" value="2911" />
+                          <option name="viewedBy" value="2913" />
                           <option name="vote" value="76-12775" />
                         </Lesson>
                       </option>
@@ -5196,7 +5196,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.18120143086221785" />
+                                <option name="correctRatio" value="0.18117908238776517" />
                                 <option name="createDate" value="2015-10-17T11:34:26Z" />
                                 <option name="discussionProxy" value="77-57792-1" />
                                 <option name="discussionThreads">
@@ -5226,7 +5226,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-21T11:54:31Z" />
-                                <option name="viewedBy" value="1982" />
+                                <option name="viewedBy" value="1983" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -5334,7 +5334,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="1341" />
+                          <option name="passedBy" value="1342" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -5377,10 +5377,10 @@
                           </option>
                           <option name="teachersGroup" />
                           <option name="testersGroup" />
-                          <option name="timeToComplete" value="6226" />
+                          <option name="timeToComplete" value="6222" />
                           <option name="title" value="Коллекции" />
                           <option name="updateDate" value="2016-11-11T12:17:07Z" />
-                          <option name="viewedBy" value="2248" />
+                          <option name="viewedBy" value="2250" />
                           <option name="vote" value="76-12776" />
                         </Lesson>
                       </option>
@@ -5430,7 +5430,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.350417439703154" />
+                                <option name="correctRatio" value="0.35030078667283665" />
                                 <option name="createDate" value="2015-10-18T14:18:17Z" />
                                 <option name="discussionProxy" value="77-58081-1" />
                                 <option name="discussionThreads">
@@ -5446,7 +5446,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12776" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1440" />
+                                <option name="passedBy" value="1442" />
                                 <option name="position" value="14" />
                                 <option name="progress" value="77-58081" />
                                 <option name="session" />
@@ -5460,7 +5460,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-18T14:20:14Z" />
-                                <option name="viewedBy" value="1803" />
+                                <option name="viewedBy" value="1806" />
                                 <option name="worth" value="4" />
                               </Step>
                             </option>
@@ -5544,7 +5544,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.1654659805603202" />
+                                <option name="correctRatio" value="0.16554247170458442" />
                                 <option name="createDate" value="2015-10-17T12:28:30Z" />
                                 <option name="discussionProxy" value="77-57810-1" />
                                 <option name="discussionThreads">
@@ -5560,7 +5560,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12776" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1341" />
+                                <option name="passedBy" value="1342" />
                                 <option name="position" value="15" />
                                 <option name="progress" value="77-57810" />
                                 <option name="session" />
@@ -5574,7 +5574,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-21T11:39:11Z" />
-                                <option name="viewedBy" value="1796" />
+                                <option name="viewedBy" value="1800" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -5684,7 +5684,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="1262" />
+                          <option name="passedBy" value="1263" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -5720,10 +5720,10 @@
                           </option>
                           <option name="teachersGroup" />
                           <option name="testersGroup" />
-                          <option name="timeToComplete" value="3086" />
+                          <option name="timeToComplete" value="3085" />
                           <option name="title" value="Функциональные интерфейсы" />
                           <option name="updateDate" value="2016-11-11T12:17:19Z" />
-                          <option name="viewedBy" value="2094" />
+                          <option name="viewedBy" value="2096" />
                           <option name="vote" value="76-12777" />
                         </Lesson>
                       </option>
@@ -5773,7 +5773,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.2668892380204242" />
+                                <option name="correctRatio" value="0.2668236217382774" />
                                 <option name="createDate" value="2015-10-17T13:42:28Z" />
                                 <option name="discussionProxy" value="77-57838-1" />
                                 <option name="discussionThreads">
@@ -5789,7 +5789,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12777" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1262" />
+                                <option name="passedBy" value="1263" />
                                 <option name="position" value="8" />
                                 <option name="progress" value="77-57838" />
                                 <option name="session" />
@@ -5803,7 +5803,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-18T08:52:19Z" />
-                                <option name="viewedBy" value="1771" />
+                                <option name="viewedBy" value="1774" />
                                 <option name="worth" value="4" />
                               </Step>
                             </option>
@@ -5906,7 +5906,7 @@
                           <option name="learnersGroup" />
                           <option name="moderatorsGroup" />
                           <option name="owner" value="1647194" />
-                          <option name="passedBy" value="656" />
+                          <option name="passedBy" value="659" />
                           <option name="playlists">
                             <list />
                           </option>
@@ -5952,7 +5952,7 @@
                           <option name="timeToComplete" value="13468" />
                           <option name="title" value="Stream API" />
                           <option name="updateDate" value="2016-11-11T12:17:31Z" />
-                          <option name="viewedBy" value="2347" />
+                          <option name="viewedBy" value="2351" />
                           <option name="vote" value="76-12781" />
                         </Lesson>
                       </option>
@@ -6002,7 +6002,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.40603728913879844" />
+                                <option name="correctRatio" value="0.40609287193138127" />
                                 <option name="createDate" value="2015-10-17T14:21:36Z" />
                                 <option name="discussionProxy" value="77-57848-1" />
                                 <option name="discussionThreads">
@@ -6018,7 +6018,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12781" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="1301" />
+                                <option name="passedBy" value="1302" />
                                 <option name="position" value="11" />
                                 <option name="progress" value="77-57848" />
                                 <option name="session" />
@@ -6032,7 +6032,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-20T10:29:03Z" />
-                                <option name="viewedBy" value="1743" />
+                                <option name="viewedBy" value="1744" />
                                 <option name="worth" value="3" />
                               </Step>
                             </option>
@@ -6229,7 +6229,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.16089992242048098" />
+                                <option name="correctRatio" value="0.16061215025506262" />
                                 <option name="createDate" value="2015-10-17T15:21:10Z" />
                                 <option name="discussionProxy" value="77-57858-1" />
                                 <option name="discussionThreads">
@@ -6245,7 +6245,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12781" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="838" />
+                                <option name="passedBy" value="839" />
                                 <option name="position" value="13" />
                                 <option name="progress" value="77-57858" />
                                 <option name="session" />
@@ -6259,7 +6259,7 @@
                                   </list>
                                 </option>
                                 <option name="updateDate" value="2015-10-28T22:48:00Z" />
-                                <option name="viewedBy" value="1750" />
+                                <option name="viewedBy" value="1751" />
                                 <option name="worth" value="6" />
                               </Step>
                             </option>
@@ -6338,7 +6338,7 @@
                                     <option name="video" />
                                   </BlockView>
                                 </option>
-                                <option name="correctRatio" value="0.24055330634278002" />
+                                <option name="correctRatio" value="0.24099629754291485" />
                                 <option name="createDate" value="2015-10-18T15:30:46Z" />
                                 <option name="discussionProxy" value="77-58108-1" />
                                 <option name="discussionThreads">
@@ -6354,7 +6354,7 @@
                                 <option name="instructionType" />
                                 <option name="lesson" value="12781" />
                                 <option name="maxSubmissionsCount" value="3" />
-                                <option name="passedBy" value="656" />
+                                <option name="passedBy" value="659" />
                                 <option name="position" value="14" />
                                 <option name="progress" value="77-58108" />
                                 <option name="session" />

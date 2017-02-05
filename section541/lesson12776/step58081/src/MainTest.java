@@ -1,9 +1,11 @@
-import meanmail.test.utils.TestUtils;
+// Don't edit this file
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,23 +31,13 @@ public class MainTest {
 
     @Test(timeout = 8000)
     public void symmetricDifferenceSample1() throws Throwable {
-        Set<Integer> set1 = new HashSet<>();
-        set1.add(1);
-        set1.add(2);
-        set1.add(3);
-
+        Set<Integer> set1 = createSet(1, 2, 3);
         HashSet<Integer> backupSet1 = new HashSet<>(set1);
 
-        Set<Integer> set2 = new HashSet<>();
-        set2.add(0);
-        set2.add(1);
-        set2.add(2);
-
+        Set<Integer> set2 = createSet(0, 1, 2);
         HashSet<Integer> backupSet2 = new HashSet<>(set2);
 
-        Set<Integer> expectedSet = new HashSet<>();
-        expectedSet.add(0);
-        expectedSet.add(3);
+        Set<Integer> expectedSet = createSet(0, 3);
 
         Set actual = (Set) TestUtils.invokeMethod(mainClass, symmetricDifference, set1, set2);
 
@@ -58,27 +50,13 @@ public class MainTest {
 
     @Test(timeout = 8000)
     public void symmetricDifferenceSample2() throws Throwable {
-        Set<Integer> set1 = new HashSet<>();
-        set1.add(1);
-        set1.add(2);
-        set1.add(3);
-
+        Set<Integer> set1 = createSet(1, 2, 3);
         HashSet<Integer> backupSet1 = new HashSet<>(set1);
 
-        Set<Integer> set2 = new HashSet<>();
-        set2.add(4);
-        set2.add(5);
-        set2.add(6);
-
+        Set<Integer> set2 = createSet(4, 5, 6);
         HashSet<Integer> backupSet2 = new HashSet<>(set2);
 
-        Set<Integer> expectedSet = new HashSet<>();
-        expectedSet.add(1);
-        expectedSet.add(2);
-        expectedSet.add(3);
-        expectedSet.add(4);
-        expectedSet.add(5);
-        expectedSet.add(6);
+        Set<Integer> expectedSet = createSet(1, 2, 3, 4, 5, 6);
 
         Set actual = (Set) TestUtils.invokeMethod(mainClass, symmetricDifference, set1, set2);
 
@@ -107,11 +85,7 @@ public class MainTest {
 
     @Test(timeout = 8000)
     public void symmetricDifferenceEqualsSets() throws Throwable {
-        Set<Integer> set1 = new HashSet<>();
-        set1.add(1);
-        set1.add(2);
-        set1.add(3);
-
+        Set<Integer> set1 = createSet(1, 2, 3);
         HashSet<Integer> backupSet1 = new HashSet<>(set1);
 
         HashSet<Integer> set2 = new HashSet<>(set1);
@@ -126,5 +100,12 @@ public class MainTest {
 
         String message = String.format("Main.symmetricDifference(%s, %s)", set1.toString(), set2.toString());
         assertEquals(message, expectedSet, actual);
+    }
+
+    @SafeVarargs
+    private final <T> Set<T> createSet(T... items) {
+        Set<T> set = new HashSet<>();
+        Collections.addAll(set, items);
+        return set;
     }
 }
