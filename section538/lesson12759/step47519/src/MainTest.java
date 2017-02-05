@@ -24,7 +24,7 @@ public class MainTest {
             Class<Boolean> booleanClass = Boolean.TYPE;
             Method booleanExpression = TestUtils.getMethod(mainClass,
                     "booleanExpression",
-                    Modifier.PUBLIC | Modifier.STATIC,
+                    new int[]{Modifier.PUBLIC | Modifier.STATIC},
                     booleanClass,
                     booleanClass, booleanClass, booleanClass, booleanClass);
 

@@ -21,7 +21,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         doubleExpression = TestUtils.getMethod(mainClass,
                 "doubleExpression",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 Boolean.TYPE, Double.TYPE, Double.TYPE, Double.TYPE);
     }
 

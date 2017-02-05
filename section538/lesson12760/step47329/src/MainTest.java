@@ -21,7 +21,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         charExpression = TestUtils.getMethod(mainClass,
                 "isPowerOfTwo",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 Boolean.TYPE, Integer.TYPE);
     }
 

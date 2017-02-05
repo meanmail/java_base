@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +21,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         isPalindrome = TestUtils.getMethod(mainClass,
                 "isPalindrome",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 Boolean.TYPE,
                 String.class);
     }
@@ -43,7 +42,6 @@ public class MainTest {
 
     @Test(timeout = 8000L)
     public void isPalindromeSample3() throws Exception {
-        Random random = new Random();
         String text = "|2 @\"$U~ ~/~\\~p* p#e!!!r[ ]c{a}:s'e<.> _Es^a$c Re+p''p///u2-";
         String message = String.format(MESSAGE_TEMPLATE, text);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, isPalindrome, text));

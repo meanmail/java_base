@@ -6,12 +6,10 @@ import org.junit.Test;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * @author meanmail
@@ -26,34 +24,27 @@ public class MainTest {
     @BeforeClass
     public static void beforeClass() {
         mainClass = TestUtils.getUserClass("Main");
-        List<Class<?>> classes = Arrays.stream(mainClass.getDeclaredClasses())
-                .filter(clazz -> clazz.getSimpleName().equals("AsciiCharSequence"))
-                .collect(Collectors.toList());
-
-        if (classes.size() == 0) {
-            fail("Main.AsciiCharSequence did't found");
-        }
-        Class<?> asciiCharSequenceClass = classes.get(0);
+        Class<?> asciiCharSequenceClass = TestUtils.getInnerClass(mainClass, "AsciiCharSequence");
 
         constructor = TestUtils.getConstructor(asciiCharSequenceClass,
-                Modifier.PUBLIC,
+                new int[]{Modifier.PUBLIC, 0},
                 mainClass,
                 byte[].class);
 
         length = TestUtils.getMethod(asciiCharSequenceClass,
                 "length",
-                Modifier.PUBLIC,
+                new int[]{Modifier.PUBLIC},
                 Integer.TYPE);
 
         charAt = TestUtils.getMethod(asciiCharSequenceClass,
                 "charAt",
-                Modifier.PUBLIC,
+                new int[]{Modifier.PUBLIC},
                 Character.TYPE,
                 Integer.TYPE);
 
         subSequence = TestUtils.getMethod(asciiCharSequenceClass,
                 "subSequence",
-                Modifier.PUBLIC,
+                new int[]{Modifier.PUBLIC},
                 CharSequence.class,
                 Integer.TYPE,
                 Integer.TYPE);

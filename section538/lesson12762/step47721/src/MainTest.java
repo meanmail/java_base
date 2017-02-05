@@ -50,7 +50,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         printTextPerRole = TestUtils.getMethod(mainClass,
                 "printTextPerRole",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 String.class,
                 String[].class,
                 String[].class);

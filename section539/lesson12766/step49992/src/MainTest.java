@@ -22,7 +22,7 @@ public class MainTest {
 
         moveRobot = TestUtils.getMethod(mainClass,
                 "moveRobot",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 Void.TYPE,
                 Robot.class, Integer.TYPE, Integer.TYPE);
     }

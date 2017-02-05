@@ -36,7 +36,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         mergeArrays = TestUtils.getMethod(mainClass,
                 "mergeArrays",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 int[].class,
                 int[].class,
                 int[].class);

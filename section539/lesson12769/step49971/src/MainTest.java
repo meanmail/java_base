@@ -5,11 +5,9 @@ import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * @author meanmail
@@ -27,17 +25,11 @@ public class MainTest {
     @BeforeClass
     public static void beforeClass() {
         mainClass = TestUtils.getUserClass("Main");
-        List<Class<?>> classes = Arrays.stream(mainClass.getDeclaredClasses())
-                .filter(clazz -> clazz.getSimpleName().equals("ComplexNumber"))
-                .collect(Collectors.toList());
 
-        if (classes.size() == 0) {
-            fail("Main.ComplexNumber did't found");
-        }
-        Class<?> complexNumberClass = classes.get(0);
+        Class<?> complexNumberClass = TestUtils.getInnerClass(mainClass, "ComplexNumber");
 
         constructor = TestUtils.getConstructor(complexNumberClass,
-                Modifier.PUBLIC,
+                new int[]{Modifier.PUBLIC, 0},
                 mainClass,
                 Double.TYPE,
                 Double.TYPE);

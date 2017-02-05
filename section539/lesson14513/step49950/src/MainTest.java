@@ -23,7 +23,7 @@ public class MainTest {
 
         integrate = TestUtils.getMethod(mainClass,
                 "integrate",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 Double.TYPE,
                 DoubleUnaryOperator.class, Double.TYPE, Double.TYPE);
     }

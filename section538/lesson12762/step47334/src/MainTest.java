@@ -23,7 +23,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         factorial = TestUtils.getMethod(mainClass,
                 "factorial",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 BigInteger.class,
                 Integer.TYPE);
     }

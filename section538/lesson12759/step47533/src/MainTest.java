@@ -28,7 +28,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         leapYearCount = TestUtils.getMethod(mainClass,
                 "leapYearCount",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 Integer.TYPE, Integer.TYPE);
     }
 

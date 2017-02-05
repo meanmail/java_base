@@ -20,7 +20,7 @@ public class MainTest {
         mainClass = TestUtils.getUserClass("Main");
         flipBit = TestUtils.getMethod(mainClass,
                 "flipBit",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 Integer.TYPE, Integer.TYPE, Integer.TYPE);
     }
 
