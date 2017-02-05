@@ -63,7 +63,9 @@ public class MainTest {
         Object a = TestUtils.newInstance(constructor, mainInstance, 1, 1);
         Object b = TestUtils.newInstance(constructor, mainInstance, 1, 2);
 
-        String message = String.format(MESSAGE_TEMPLATE_EQUALS, 1.0, 1.0, 1.0, 2.0);
+        String message = String.format(MESSAGE_TEMPLATE_HASHCODE, 1.0, 1.0, 1.0, 2.0);
+        assertNotEquals(message, a.hashCode(), b.hashCode());
+        message = String.format(MESSAGE_TEMPLATE_EQUALS, 1.0, 1.0, 1.0, 2.0);
         assertNotEquals(message, a, b);
     }
 
@@ -74,7 +76,9 @@ public class MainTest {
         Object a = TestUtils.newInstance(constructor, mainInstance, 1, 1);
         Object b = TestUtils.newInstance(constructor, mainInstance, 42, 1);
 
-        String message = String.format(MESSAGE_TEMPLATE_EQUALS, 1.0, 1.0, 42.0, 1.0);
+        String message = String.format(MESSAGE_TEMPLATE_HASHCODE, 1.0, 1.0, 42.0, 1.0);
+        assertNotEquals(message, a.hashCode(), b.hashCode());
+        message = String.format(MESSAGE_TEMPLATE_EQUALS, 1.0, 1.0, 42.0, 1.0);
         assertNotEquals(message, a, b);
     }
 
