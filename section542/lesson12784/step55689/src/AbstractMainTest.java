@@ -36,13 +36,14 @@ public abstract class AbstractMainTest {
 
     @Test
     public void mainSample() throws Throwable {
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-        outStream.reset();
+        try (ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes())) {
+            outStream.reset();
 
-        TestUtils.runMain();
+            TestUtils.runMain(in, null);
 
-        String actual = outStream.toString().replace(",", ".");
-        String message = String.format("Expected %s but was %s", output, actual);
-        assertEquals(message, output, actual);
+            String actual = outStream.toString().replace(",", ".");
+            String message = String.format("Expected %s but was %s", output, actual);
+            assertEquals(message, output, actual);
+        }
     }
 }

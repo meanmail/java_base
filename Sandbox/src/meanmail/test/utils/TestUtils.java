@@ -4,6 +4,9 @@ package meanmail.test.utils;
 
 import com.sun.istack.internal.NotNull;
 
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.PrintStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -31,11 +34,19 @@ public class TestUtils {
         return pairClass;
     }
 
-    public static void runMain() throws Throwable {
+    public static void runMain(InputStream in, PrintStream out) throws Throwable {
+        if (in != null) {
+            System.setIn(in);
+        }
+        if (out != null) {
+            System.setOut(out);
+        }
+
         Class<?> mainClass = getUserClass("Main");
 
         Method main = getMethod(mainClass, "main",
                 new int[]{Modifier.PUBLIC | Modifier.STATIC | Modifier.TRANSIENT},
+                Void.TYPE,
                 String[].class);
 
         invokeMethod(mainClass, main, (Object) new String[0]);
@@ -54,15 +65,16 @@ public class TestUtils {
     }
 
     public static Method getMethod(@NotNull Class<?> clazz, @NotNull String name, int[] modifiers, Class<?> returnType, Class<?>... parameterTypes) {
+        String methodName = String.format("%s.%s", clazz.getSimpleName(), name);
         Method method = null;
         try {
             method = clazz.getDeclaredMethod(name, parameterTypes);
-            assertEquals(returnType, method.getReturnType());
+            assertEquals(String.format("Method %s return type", methodName), returnType, method.getReturnType());
         } catch (NoSuchMethodException e) {
             String argsAsString = Arrays.stream(parameterTypes)
                     .map(Class::getSimpleName)
                     .collect(joining(", "));
-            fail(String.format("%s.%s(%s) did't found", clazz.getSimpleName(), name, argsAsString));
+            fail(String.format("%s(%s) did't found", methodName, argsAsString));
         }
 
         checkModifiers(clazz, modifiers, method.getModifiers(), "Method");
@@ -114,7 +126,6 @@ public class TestUtils {
         return null;
     }
 
-
     public static Class<?> getInnerClass(Class<?> outerClass, String innerClassName) {
         List<Class<?>> classes = Arrays.stream(outerClass.getDeclaredClasses())
                 .filter(clazz -> clazz.getSimpleName().equals(innerClassName))
@@ -124,5 +135,12 @@ public class TestUtils {
             fail(String.format("%s.%s did't found", outerClass.getSimpleName(), innerClassName));
         }
         return classes.get(0);
+    }
+
+    public static void assertOutputEquals(String expected) throws Throwable {
+        try (ByteArrayOutputStream outStream = new ByteArrayOutputStream()) {
+            runMain(null, new PrintStream(outStream));
+            assertEquals(expected, outStream.toString());
+        }
     }
 }
