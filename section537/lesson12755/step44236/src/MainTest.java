@@ -1,9 +1,9 @@
 // Don't edit this file
 
+import meanmail.test.utils.TestUtils;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 public class MainTest {
 
     @Test
-    public void mainTest() throws IOException {
+    public void mainTest() throws Throwable {
         try (ByteArrayOutputStream outStream = new ByteArrayOutputStream()) {
             System.setOut(new PrintStream(outStream));
 

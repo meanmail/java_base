@@ -1,3 +1,4 @@
+import meanmail.test.utils.TestUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -17,7 +18,7 @@ public abstract class AbstractMainTest {
     private final String input;
     private final String output;
 
-    public AbstractMainTest(String input, String output) {
+    AbstractMainTest(String input, String output) {
         this.input = input;
         this.output = output;
     }
@@ -34,7 +35,7 @@ public abstract class AbstractMainTest {
     }
 
     @Test
-    public void mainSample() throws Exception {
+    public void mainSample() throws Throwable {
         System.setIn(new ByteArrayInputStream(input.getBytes()));
         outStream.reset();
 

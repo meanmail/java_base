@@ -1,3 +1,7 @@
+// Don't edit this file
+
+package meanmail.test.utils;
+
 import com.sun.istack.internal.NotNull;
 
 import java.lang.reflect.Constructor;
@@ -16,8 +20,8 @@ import static org.junit.Assert.*;
 /**
  * @author meanmail
  */
-class TestUtils {
-    static Class<?> getUserClass(@NotNull String name) {
+public class TestUtils {
+    public static Class<?> getUserClass(@NotNull String name) {
         Class<?> pairClass = null;
         try {
             pairClass = Class.forName(name);
@@ -27,7 +31,7 @@ class TestUtils {
         return pairClass;
     }
 
-    static void runMain() throws Throwable {
+    public static void runMain() throws Throwable {
         Class<?> mainClass = getUserClass("Main");
 
         Method main = getMethod(mainClass, "main",
@@ -37,7 +41,7 @@ class TestUtils {
         invokeMethod(mainClass, main, (Object) new String[0]);
     }
 
-    static Object invokeMethod(@NotNull Object object, @NotNull Method method, Object... args) throws Throwable {
+    public static Object invokeMethod(@NotNull Object object, @NotNull Method method, Object... args) throws Throwable {
         try {
             return method.invoke(object, args);
         } catch (IllegalAccessException e) {
@@ -49,7 +53,7 @@ class TestUtils {
         return null;
     }
 
-    static Method getMethod(@NotNull Class<?> clazz, @NotNull String name, int[] modifiers, Class<?> returnType, Class<?>... parameterTypes) {
+    public static Method getMethod(@NotNull Class<?> clazz, @NotNull String name, int[] modifiers, Class<?> returnType, Class<?>... parameterTypes) {
         Method method = null;
         try {
             method = clazz.getDeclaredMethod(name, parameterTypes);
@@ -73,7 +77,7 @@ class TestUtils {
     }
 
 
-    static Constructor<?> getConstructor(@NotNull Class<?> clazz, int[] modifiers, Class<?>... parameterTypes) {
+    public static Constructor<?> getConstructor(@NotNull Class<?> clazz, int[] modifiers, Class<?>... parameterTypes) {
         Constructor<?> constructor = null;
         try {
             constructor = clazz.getDeclaredConstructor(parameterTypes);
@@ -101,7 +105,7 @@ class TestUtils {
         assertTrue(message, modifierList.contains(modifiers));
     }
 
-    static Object newInstance(Constructor<?> constructor, Object... args) {
+    public static Object newInstance(Constructor<?> constructor, Object... args) {
         try {
             return constructor.newInstance(args);
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
@@ -111,7 +115,7 @@ class TestUtils {
     }
 
 
-    static Class<?> getInnerClass(Class<?> outerClass, String innerClassName) {
+    public static Class<?> getInnerClass(Class<?> outerClass, String innerClassName) {
         List<Class<?>> classes = Arrays.stream(outerClass.getDeclaredClasses())
                 .filter(clazz -> clazz.getSimpleName().equals(innerClassName))
                 .collect(Collectors.toList());

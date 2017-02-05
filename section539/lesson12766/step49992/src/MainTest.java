@@ -1,5 +1,6 @@
 // Don't edit this file
 
+import meanmail.test.utils.TestUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
