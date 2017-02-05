@@ -1,3 +1,5 @@
+// Don't edit this file
+
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
