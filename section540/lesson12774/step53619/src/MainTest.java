@@ -1,6 +1,10 @@
 // Don't edit this file
+
+import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.util.logging.*;
 
 import static org.junit.Assert.*;
@@ -13,33 +17,46 @@ public class MainTest {
     private static final String CLASS_B = "org.stepic.java.logging.ClassB";
     private static final String ORG_STEPIC_JAVA = "org.stepic.java";
 
+    private static Method configureLogging;
+    private static Class<?> mainClass;
+
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
+
+        configureLogging = TestUtils.getMethod(mainClass,
+                "configureLogging",
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
+                Void.TYPE);
+    }
+
     @Test
-    public void configureLoggingClassA() throws Exception {
-        Main.configureLogging();
+    public void configureLoggingClassA() throws Throwable {
+        TestUtils.invokeMethod(mainClass, configureLogging);
 
         Level actual = Logger.getLogger(CLASS_A).getLevel();
         assertEquals(CLASS_A, Level.ALL, actual);
     }
 
     @Test
-    public void configureLoggingClassB() throws Exception {
-        Main.configureLogging();
+    public void configureLoggingClassB() throws Throwable {
+        TestUtils.invokeMethod(mainClass, configureLogging);
 
         Level actual = Logger.getLogger(CLASS_B).getLevel();
         assertEquals(CLASS_B, Level.WARNING, actual);
     }
 
     @Test
-    public void configureLoggingPackage() throws Exception {
-        Main.configureLogging();
+    public void configureLoggingPackage() throws Throwable {
+        TestUtils.invokeMethod(mainClass, configureLogging);
 
         Level actual = Logger.getLogger(ORG_STEPIC_JAVA).getLevel();
         assertEquals(ORG_STEPIC_JAVA, Level.ALL, actual);
     }
 
     @Test
-    public void configureLoggingHandler() throws Exception {
-        Main.configureLogging();
+    public void configureLoggingHandler() throws Throwable {
+        TestUtils.invokeMethod(mainClass, configureLogging);
 
         Logger logger = Logger.getLogger(ORG_STEPIC_JAVA);
 
@@ -51,7 +68,7 @@ public class MainTest {
         }
 
         Handler consoleHandler = null;
-        for(Handler handler : logger.getHandlers()) {
+        for (Handler handler : logger.getHandlers()) {
             if (handler instanceof ConsoleHandler) {
                 consoleHandler = handler;
             }
