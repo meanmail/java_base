@@ -25,7 +25,7 @@ public class MainTest {
     }
 
     @Test
-    public void flipBitAllBitsInZero() throws Exception {
+    public void flipBitAllBitsInZero() throws Throwable {
         int value = 0;
         for (int i = 1; i <= 32; i++) {
             value = (int) TestUtils.invokeMethod(mainClass, flipBit, value, i);
@@ -36,7 +36,7 @@ public class MainTest {
     }
 
     @Test
-    public void flipBitAllBitsInAllOne() throws Exception {
+    public void flipBitAllBitsInAllOne() throws Throwable {
         int value = -1;
         for (int i = 1; i <= 32; i++) {
             value = (int) TestUtils.invokeMethod(mainClass, flipBit, value, i);

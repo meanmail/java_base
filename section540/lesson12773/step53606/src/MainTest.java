@@ -1,5 +1,10 @@
 // Don't edit this file
+
+import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -8,21 +13,36 @@ import static org.junit.Assert.fail;
  * @author meanmail
  */
 public class MainTest {
+    private static Method moveRobot;
+    private static Class<?> mainClass;
+
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
+
+        moveRobot = TestUtils.getMethod(mainClass,
+                "moveRobot",
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
+                Void.TYPE,
+                RobotConnectionManager.class,
+                Integer.TYPE, Integer.TYPE);
+    }
+
     @Test
-    public void moveRobotNormal() throws Exception {
+    public void moveRobotNormal() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
 
-        Main.moveRobot(robotConnectionManager, 100, 500);
+        TestUtils.invokeMethod(mainClass, moveRobot, robotConnectionManager, 100, 500);
 
         assertEquals(1, robotConnectionManager.callCount());
     }
 
     @Test
-    public void moveRobotCloseException() throws Exception {
+    public void moveRobotCloseException() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedOnClose();
 
-        Main.moveRobot(robotConnectionManager, 100, 500);
+        TestUtils.invokeMethod(mainClass, moveRobot, robotConnectionManager, 100, 500);
 
         int callCount = robotConnectionManager.callCount();
         int closeCount = robotConnectionManager.closeCount();
@@ -31,12 +51,12 @@ public class MainTest {
     }
 
     @Test
-    public void moveRobotTry2() throws Exception {
+    public void moveRobotTry2() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedOnClose();
         robotConnectionManager.setFailedConnectionCount(1);
 
-        Main.moveRobot(robotConnectionManager, 100, 500);
+        TestUtils.invokeMethod(mainClass, moveRobot, robotConnectionManager, 100, 500);
 
         int callCount = robotConnectionManager.callCount();
         int closeCount = robotConnectionManager.closeCount();
@@ -45,11 +65,11 @@ public class MainTest {
     }
 
     @Test
-    public void moveRobotTry3() throws Exception {
+    public void moveRobotTry3() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedConnectionCount(2);
 
-        Main.moveRobot(robotConnectionManager, 100, 500);
+        TestUtils.invokeMethod(mainClass, moveRobot, robotConnectionManager, 100, 500);
 
         int callCount = robotConnectionManager.callCount();
         int closeCount = robotConnectionManager.closeCount();
@@ -58,12 +78,12 @@ public class MainTest {
     }
 
     @Test(expected = RobotConnectionException.class)
-    public void moveRobotTry4() throws Exception {
+    public void moveRobotTry4() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedOnClose();
         robotConnectionManager.setFailedConnectionCount(3);
 
-        Main.moveRobot(robotConnectionManager, 100, 500);
+        TestUtils.invokeMethod(mainClass, moveRobot, robotConnectionManager, 100, 500);
 
         int callCount = robotConnectionManager.callCount();
         int closeCount = robotConnectionManager.closeCount();
@@ -81,8 +101,8 @@ public class MainTest {
         robotConnectionManager.setMoveRobotToException(expectedException);
 
         try {
-            Main.moveRobot(robotConnectionManager, 100, 500);
-        } catch (Exception e) {
+            TestUtils.invokeMethod(mainClass, moveRobot, robotConnectionManager, 100, 500);
+        } catch (Throwable e) {
             String message = String.format("Expected RuntimeException, but %s", e.getClass().getSimpleName());
             assertEquals(message, expectedException, e);
         }

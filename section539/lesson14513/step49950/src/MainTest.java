@@ -29,16 +29,16 @@ public class MainTest {
     }
 
     @Test(timeout = 8000L)
-    public void integrateSample1() throws Exception {
+    public void integrateSample1() throws Throwable {
         integrate(x -> 1, 0, 10, 10, "x -> 1");
     }
 
     @Test(timeout = 8000L)
-    public void integrateSample2() throws Exception {
+    public void integrateSample2() throws Throwable {
         integrate(x -> x, -458, 100, -99882.0004536563, "x -> x");
     }
 
-    private void integrate(DoubleUnaryOperator operator, double a, double b, double expected, String operatorStr) {
+    private void integrate(DoubleUnaryOperator operator, double a, double b, double expected, String operatorStr) throws Throwable {
         double actual = (double) TestUtils.invokeMethod(mainClass, integrate, operator, a, b);
 
         String message = String.format(MESSAGE_TEMPLATE, operatorStr, a, b);

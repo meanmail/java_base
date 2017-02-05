@@ -27,7 +27,7 @@ class TestUtils {
         return pairClass;
     }
 
-    static void runMain() {
+    static void runMain() throws Throwable {
         Class<?> mainClass = getUserClass("Main");
 
         Method main = getMethod(mainClass, "main",
@@ -37,12 +37,14 @@ class TestUtils {
         invokeMethod(mainClass, main, (Object) new String[0]);
     }
 
-    static Object invokeMethod(@NotNull Object object, @NotNull Method method, Object... args) {
+    static Object invokeMethod(@NotNull Object object, @NotNull Method method, Object... args) throws Throwable {
         try {
             return method.invoke(object, args);
-        } catch (IllegalAccessException | InvocationTargetException e) {
+        } catch (IllegalAccessException e) {
             String argsAsString = Arrays.stream(args).map(Object::toString).collect(joining(", "));
             fail(String.format("Can't run %s.%s(%s)", object.getClass().getSimpleName(), method.getName(), argsAsString));
+        } catch (InvocationTargetException e) {
+            throw e.getTargetException();
         }
         return null;
     }

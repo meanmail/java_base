@@ -26,7 +26,7 @@ public class MainTest {
     }
 
     @Test
-    public void charExpressionSample1() throws Exception {
+    public void charExpressionSample1() throws Throwable {
         int offset = 32;
         char expected = '|';
         String message = String.format(MESSAGE_TEMPLATE, offset);
@@ -34,7 +34,7 @@ public class MainTest {
     }
 
     @Test
-    public void charExpressionSample2() throws Exception {
+    public void charExpressionSample2() throws Throwable {
         int offset = 29;
         char expected = 'y';
         String message = String.format(MESSAGE_TEMPLATE, offset);
@@ -42,7 +42,7 @@ public class MainTest {
     }
 
     @Test
-    public void charExpressionSample3() throws Exception {
+    public void charExpressionSample3() throws Throwable {
         int offset = 0;
         char expected = '\\';
         String message = String.format(MESSAGE_TEMPLATE, offset);
@@ -50,7 +50,7 @@ public class MainTest {
     }
 
     @Test
-    public void charExpressionSample4() throws Exception {
+    public void charExpressionSample4() throws Throwable {
         int offset = -20;
         char expected = 'H';
         String message = String.format(MESSAGE_TEMPLATE, offset);

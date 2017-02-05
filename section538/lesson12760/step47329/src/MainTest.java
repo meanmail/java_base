@@ -26,35 +26,35 @@ public class MainTest {
     }
 
     @Test
-    public void isPowerOfTwoSample1() throws Exception {
+    public void isPowerOfTwoSample1() throws Throwable {
         int value = 0;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, false, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
     @Test
-    public void isPowerOfTwoSample2() throws Exception {
+    public void isPowerOfTwoSample2() throws Throwable {
         int value = 1;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
     @Test
-    public void isPowerOfTwoSample3() throws Exception {
+    public void isPowerOfTwoSample3() throws Throwable {
         int value = -2;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
     @Test
-    public void isPowerOfTwoSample4() throws Exception {
+    public void isPowerOfTwoSample4() throws Throwable {
         int value = 1458;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, false, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
     @Test
-    public void isPowerOfTwoSample5() throws Exception {
+    public void isPowerOfTwoSample5() throws Throwable {
         int value = -536_870_912;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, charExpression, value));

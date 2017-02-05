@@ -26,7 +26,7 @@ public class MainTest {
     }
 
     @Test(timeout = 8000)
-    public void getCallerClassAndMethodNameNotNull1() throws Exception {
+    public void getCallerClassAndMethodNameNotNull1() throws Throwable {
         String classMethod = (String) TestUtils.invokeMethod(mainClass, getCallerClassAndMethodName);
         assertEquals("sun.reflect.NativeMethodAccessorImpl#invoke", classMethod);
     }

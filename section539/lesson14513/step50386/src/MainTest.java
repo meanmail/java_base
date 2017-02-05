@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class MainTest {
     @Test
-    public void checkLabels() throws Exception {
+    public void checkLabels() throws Throwable {
         Class<?> mainClass = TestUtils.getUserClass("Main");
 
         Class<?> keywordAnalyzerClass = TestUtils.getInnerClass(mainClass, "KeywordAnalyzer");

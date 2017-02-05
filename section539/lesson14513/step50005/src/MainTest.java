@@ -51,7 +51,7 @@ public class MainTest {
     }
 
     @Test
-    public void sample1() throws IllegalAccessException, InstantiationException {
+    public void sample1() throws Throwable {
         Object mainInstance = mainClass.newInstance();
         String string = "I'm string";
         Object asciiCharSequence = TestUtils.newInstance(constructor, mainInstance, string.getBytes());

@@ -28,7 +28,7 @@ public class MainTest {
     }
 
     @Test(timeout = 8000L)
-    public void moveRobotSample1() throws Exception {
+    public void moveRobotSample1() throws Throwable {
         beforeClass();
 
         Robot robot = new Robot();
@@ -42,7 +42,7 @@ public class MainTest {
     }
 
     @Test(timeout = 8000L)
-    public void moveRobotSample2() throws Exception {
+    public void moveRobotSample2() throws Throwable {
         beforeClass();
 
         Robot robot = new Robot();

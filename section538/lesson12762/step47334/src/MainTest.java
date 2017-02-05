@@ -29,7 +29,7 @@ public class MainTest {
     }
 
     @Test(timeout = 8000L)
-    public void factorialSample1() throws Exception {
+    public void factorialSample1() throws Throwable {
         int value = 1;
         BigInteger actual = (BigInteger) TestUtils.invokeMethod(mainClass, factorial, value);
         String message = String.format(MESSAGE_TEMPLATE, value);
@@ -37,7 +37,7 @@ public class MainTest {
     }
 
     @Test(timeout = 8000L)
-    public void factorialSample2() throws Exception {
+    public void factorialSample2() throws Throwable {
         int value = 3;
         BigInteger actual = (BigInteger) TestUtils.invokeMethod(mainClass, factorial, value);
         String message = String.format(MESSAGE_TEMPLATE, value);
@@ -45,7 +45,7 @@ public class MainTest {
     }
 
     @Test(timeout = 8000L)
-    public void factorialSample3() throws Exception {
+    public void factorialSample3() throws Throwable {
         int value = 20;
         BigInteger actual = (BigInteger) TestUtils.invokeMethod(mainClass, factorial, value);
         String message = String.format(MESSAGE_TEMPLATE, value);

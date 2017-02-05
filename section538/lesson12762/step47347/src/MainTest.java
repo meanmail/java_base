@@ -43,7 +43,7 @@ public class MainTest {
     }
 
     @Test
-    public void mergeArraysSample1() throws Exception {
+    public void mergeArraysSample1() throws Throwable {
         for (int[][] sample : samples) {
             int[] array = (int[]) TestUtils.invokeMethod(mainClass, mergeArrays, sample[0], sample[1]);
 

@@ -41,7 +41,7 @@ public class MainTest {
     }
 
     @Test
-    public void sqrtNotException() throws Exception {
+    public void sqrtNotException() throws Throwable {
         double value = (double) TestUtils.invokeMethod(mainClass, sqrt, 100);
 
         assertEquals(10.0, value, 0);

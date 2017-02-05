@@ -33,7 +33,7 @@ public class MainTest {
     }
 
     @Test
-    public void leapYearCount() throws Exception {
+    public void leapYearCount() throws Throwable {
         for (int[] leap : leaps) {
             String message = String.format("Main.leapYearCount(%s)", leap[0]);
             assertEquals(message, leap[1], TestUtils.invokeMethod(mainClass, leapYearCount, leap[0]));

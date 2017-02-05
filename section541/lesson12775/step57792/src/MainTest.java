@@ -11,23 +11,39 @@ import static org.junit.Assert.*;
 public class MainTest {
 
     @Test
-    public void testClassStructure() {
+    public void testClassStructure() throws Throwable {
         Class<?> pairClass = TestUtils.getUserClass("Pair");
 
         assertEquals("Class Pair should be package-private", 0, pairClass.getModifiers());
 
-        Method getFirst = TestUtils.getMethod(pairClass, "getFirst", Modifier.PUBLIC, Object.class);
-        Method getSecond = TestUtils.getMethod(pairClass, "getSecond", Modifier.PUBLIC, Object.class);
-        TestUtils.getMethod(pairClass, "equals", Modifier.PUBLIC, Boolean.TYPE, Object.class);
-        TestUtils.getMethod(pairClass, "hashCode", Modifier.PUBLIC, Integer.TYPE);
+        Method getFirst = TestUtils.getMethod(pairClass,
+                "getFirst",
+                new int[]{Modifier.PUBLIC},
+                Object.class);
+
+        Method getSecond = TestUtils.getMethod(pairClass,
+                "getSecond",
+                new int[]{Modifier.PUBLIC},
+                Object.class);
+
+        TestUtils.getMethod(pairClass,
+                "equals",
+                new int[]{Modifier.PUBLIC},
+                Boolean.TYPE, Object.class);
+
+        TestUtils.getMethod(pairClass,
+                "hashCode",
+                new int[]{Modifier.PUBLIC},
+                Integer.TYPE);
+
         Method of = TestUtils.getMethod(pairClass,
                 "of",
-                Modifier.PUBLIC | Modifier.STATIC,
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
                 pairClass,
                 Object.class,
                 Object.class);
 
-        TestUtils.getConstructor(pairClass, Modifier.PRIVATE);
+        TestUtils.getConstructor(pairClass, new int[]{Modifier.PRIVATE, 0});
 
         Object pair = TestUtils.invokeMethod(pairClass, of, 1, "hello");
 

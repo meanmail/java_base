@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class MainTest {
 
     @Test
-    public void booleanExpression() {
+    public void booleanExpression() throws Throwable {
         Class<?> mainClass = TestUtils.getUserClass("Main");
         for (int i = 0; i < 16; i++) {
             boolean a = (i % 2) == 1;

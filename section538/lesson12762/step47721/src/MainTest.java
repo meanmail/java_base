@@ -57,7 +57,7 @@ public class MainTest {
     }
 
     @Test
-    public void printTextPerRoleSample1() throws Exception {
+    public void printTextPerRoleSample1() throws Throwable {
         assertEquals(MESSAGE_TEMPLATE, sampleOutput1, TestUtils.invokeMethod(mainClass, printTextPerRole, sampleInputRoles1, sampleInputTextLines1));
     }
 }
