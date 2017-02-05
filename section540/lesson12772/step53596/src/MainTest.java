@@ -1,5 +1,10 @@
 // Don't edit this file
+
+import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -8,21 +13,36 @@ import static org.junit.Assert.fail;
  * @author meanmail
  */
 public class MainTest {
+    private static Method sqrt;
+    private static Class<?> mainClass;
+
+    @BeforeClass
+    public static void beforeClass() {
+        mainClass = TestUtils.getUserClass("Main");
+
+        sqrt = TestUtils.getMethod(mainClass,
+                "sqrt",
+                new int[]{Modifier.PUBLIC | Modifier.STATIC},
+                Double.TYPE,
+                Double.TYPE);
+    }
+
     @Test
     public void sqrtException() throws Exception {
         try {
             Main.sqrt(-100);
         } catch (IllegalArgumentException e) {
-            assertEquals("Expected non-negative number, got -100.0", e.getMessage());
+            String message = "Main.sqrt(-100);\nIllegalArgumentException.getMessage()";
+            assertEquals(message, "Expected non-negative number, got -100.0", e.getMessage());
             return;
         }
 
-        fail("Called sqrt(-100). Expected IllegalArgumentException");
+        fail("Main.sqrt(-100). Expected IllegalArgumentException");
     }
 
     @Test
     public void sqrtNotException() throws Exception {
-        double value = Main.sqrt(100);
+        double value = (double) TestUtils.invokeMethod(mainClass, sqrt, 100);
 
         assertEquals(10.0, value, 0);
     }
