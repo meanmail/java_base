@@ -43,7 +43,7 @@ public class TestUtils {
         Class<?> mainClass = getUserClass("Main");
 
         Method main = getMethod(mainClass, "main",
-                new int[]{Modifier.PUBLIC | Modifier.STATIC | Modifier.TRANSIENT},
+                new int[]{Modifier.PUBLIC | Modifier.STATIC | Modifier.TRANSIENT, Modifier.PUBLIC | Modifier.STATIC},
                 Void.TYPE,
                 String[].class);
 
