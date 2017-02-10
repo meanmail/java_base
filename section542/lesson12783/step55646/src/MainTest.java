@@ -28,11 +28,10 @@ public class MainTest {
     }
 
     @Test
-    public void main() throws Exception {
+    public void main() throws Throwable {
         for (int i = 0; i < testSet.length; i++) {
-            System.setIn(new ByteArrayInputStream(testSet[i][0]));
             outStream.reset();
-            Main.main();
+            TestUtils.runMain(new ByteArrayInputStream(testSet[i][0]), new PrintStream(outStream));
 
             byte[] expected = testSet[i][1];
             byte[] actual = outStream.toByteArray();
