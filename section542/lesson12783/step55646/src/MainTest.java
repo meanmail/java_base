@@ -19,7 +19,7 @@ public class MainTest {
     private static ByteArrayOutputStream outStream;
     private static byte[][][] testSet = new byte[][][]{{{65, 13, 10, 10, 13}, {65, 10, 10, 13}}, {{}, {}}, {{13, 10}, {10}},
             {{10, 13}, {10, 13}}, {{13, 13, 13, 13, 13}, {13, 13, 13, 13, 13}}, {{10, 10}, {10, 10}}, {{13, 13, 10}, {13, 10}},
-            {{13, 65}, {13, 65}}};
+            {{13, 65}, {13, 65}}, {{65, 65, 65}, {65, 65, 65}}, {{13, 13, 13, 10}, {13, 13, 10}}, {{55, 55}, {55, 55}}};
 
     @BeforeClass
     public static void beforeClass() throws IOException {
