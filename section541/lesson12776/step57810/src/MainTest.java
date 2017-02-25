@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class MainTest {
 
-    @Test
+    @Test(timeout = 8000)
     public void sample1() throws Throwable {
         try (ByteArrayInputStream in = new ByteArrayInputStream("1 2 3 4 5 6 7".getBytes())) {
             try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {

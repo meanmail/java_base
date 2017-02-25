@@ -22,7 +22,7 @@ public class MainTest {
     };
     private static final int[] testResults = new int[]{71, 931, 0, 5397, 71, 0, 255};
 
-    @Test
+    @Test(timeout = 8000)
     public void checkSumOfStreamSample1() throws IOException {
         for (int i = 0; i < testSets.length; i++) {
             int checkSum = Main.checkSumOfStream(new ByteArrayInputStream(testSets[i]));

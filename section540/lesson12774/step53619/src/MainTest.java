@@ -30,7 +30,7 @@ public class MainTest {
                 Void.TYPE);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void configureLoggingClassA() throws Throwable {
         TestUtils.invokeMethod(mainClass, configureLogging);
 
@@ -38,7 +38,7 @@ public class MainTest {
         assertEquals(CLASS_A, Level.ALL, actual);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void configureLoggingClassB() throws Throwable {
         TestUtils.invokeMethod(mainClass, configureLogging);
 
@@ -46,7 +46,7 @@ public class MainTest {
         assertEquals(CLASS_B, Level.WARNING, actual);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void configureLoggingPackage() throws Throwable {
         TestUtils.invokeMethod(mainClass, configureLogging);
 
@@ -54,7 +54,7 @@ public class MainTest {
         assertEquals(ORG_STEPIC_JAVA, Level.ALL, actual);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void configureLoggingHandler() throws Throwable {
         TestUtils.invokeMethod(mainClass, configureLogging);
 

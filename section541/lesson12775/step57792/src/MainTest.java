@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  */
 public class MainTest {
 
-    @Test
+    @Test(timeout = 8000)
     public void testClassStructure() throws Throwable {
         Class<?> pairClass = TestUtils.getUserClass("Pair");
 

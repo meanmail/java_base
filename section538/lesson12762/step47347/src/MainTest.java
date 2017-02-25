@@ -42,7 +42,7 @@ public class MainTest {
                 int[].class);
     }
 
-    @Test
+    @Test(timeout = 6000)
     public void mergeArraysSample1() throws Throwable {
         for (int[][] sample : samples) {
             int[] array = (int[]) TestUtils.invokeMethod(mainClass, mergeArrays, sample[0], sample[1]);

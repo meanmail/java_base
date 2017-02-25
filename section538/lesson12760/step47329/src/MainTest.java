@@ -25,35 +25,35 @@ public class MainTest {
                 Boolean.TYPE, Integer.TYPE);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void isPowerOfTwoSample1() throws Throwable {
         int value = 0;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, false, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void isPowerOfTwoSample2() throws Throwable {
         int value = 1;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void isPowerOfTwoSample3() throws Throwable {
         int value = -2;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void isPowerOfTwoSample4() throws Throwable {
         int value = 1458;
         String message = String.format(MESSAGE_TEMPLATE, value);
         assertEquals(message, false, TestUtils.invokeMethod(mainClass, charExpression, value));
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void isPowerOfTwoSample5() throws Throwable {
         int value = -536_870_912;
         String message = String.format(MESSAGE_TEMPLATE, value);

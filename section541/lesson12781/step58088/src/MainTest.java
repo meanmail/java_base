@@ -33,7 +33,7 @@ public class MainTest {
                 BiConsumer.class);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void findMinMax() throws Throwable {
         Stream stream = Arrays.stream(new Integer[]{10, 20, 1, 5, 8, 94, 1, -52, 0});
         Comparator<Integer> comparator = Integer::compare;

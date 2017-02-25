@@ -32,7 +32,7 @@ public class MainTest {
                 Integer.TYPE, Integer.TYPE);
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void leapYearCount() throws Throwable {
         for (int[] leap : leaps) {
             String message = String.format("Main.leapYearCount(%s)", leap[0]);

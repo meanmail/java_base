@@ -27,7 +27,7 @@ public class MainTest {
                 Double.TYPE);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void sqrtException() throws Exception {
         try {
             Main.sqrt(-100);
@@ -40,7 +40,7 @@ public class MainTest {
         fail("Main.sqrt(-100). Expected IllegalArgumentException");
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void sqrtNotException() throws Throwable {
         double value = (double) TestUtils.invokeMethod(mainClass, sqrt, 100);
 

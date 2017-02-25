@@ -56,7 +56,7 @@ public class MainTest {
                 String[].class);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void printTextPerRoleSample1() throws Throwable {
         assertEquals(MESSAGE_TEMPLATE, sampleOutput1, TestUtils.invokeMethod(mainClass, printTextPerRole, sampleInputRoles1, sampleInputTextLines1));
     }

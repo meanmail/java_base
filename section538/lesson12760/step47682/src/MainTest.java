@@ -25,7 +25,7 @@ public class MainTest {
                 Character.TYPE, Integer.TYPE);
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void charExpressionSample1() throws Throwable {
         int offset = 32;
         char expected = '|';
@@ -33,7 +33,7 @@ public class MainTest {
         assertEquals(message, expected, TestUtils.invokeMethod(mainClass, charExpression, offset));
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void charExpressionSample2() throws Throwable {
         int offset = 29;
         char expected = 'y';
@@ -41,7 +41,7 @@ public class MainTest {
         assertEquals(message, expected, TestUtils.invokeMethod(mainClass, charExpression, offset));
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void charExpressionSample3() throws Throwable {
         int offset = 0;
         char expected = '\\';
@@ -49,7 +49,7 @@ public class MainTest {
         assertEquals(message, expected, TestUtils.invokeMethod(mainClass, charExpression, offset));
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void charExpressionSample4() throws Throwable {
         int offset = -20;
         char expected = 'H';

@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class MainTest {
 
-    @Test
+    @Test(timeout = 2000)
     public void booleanExpression() throws Throwable {
         Class<?> mainClass = TestUtils.getUserClass("Main");
         for (int i = 0; i < 16; i++) {

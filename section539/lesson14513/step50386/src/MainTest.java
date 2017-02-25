@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
  * @author meanmail
  */
 public class MainTest {
-    @Test
+    @Test(timeout = 8000)
     public void checkLabels() throws Throwable {
         Class<?> mainClass = TestUtils.getUserClass("Main");
 

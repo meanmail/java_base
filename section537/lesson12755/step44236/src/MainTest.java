@@ -6,7 +6,7 @@ import org.junit.Test;
  * @author meanmail
  */
 public class MainTest {
-    @Test
+    @Test(timeout = 5000)
     public void mainTest() throws Throwable {
         TestUtils.assertOutputEquals("It's alive! It's alive!");
     }

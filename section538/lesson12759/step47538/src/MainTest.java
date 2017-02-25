@@ -25,31 +25,31 @@ public class MainTest {
                 Boolean.TYPE, Double.TYPE, Double.TYPE, Double.TYPE);
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void doubleExpressionSamples() throws Throwable {
         String message = String.format(MESSAGE_TEMPLATE, 0.1, 0.2, 0.3);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, doubleExpression, 0.1, 0.2, 0.3));
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void doubleExpressionFalse1() throws Throwable {
         String message = String.format(MESSAGE_TEMPLATE, 5.1006, 4.2, 9.3);
         assertEquals(message, false, TestUtils.invokeMethod(mainClass, doubleExpression, 5.1006, 4.2, 9.3));
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void doubleExpressionFalse2() throws Throwable {
         String message = String.format(MESSAGE_TEMPLATE, 90500.0, -100500.0, -9000.00025);
         assertEquals(message, false, TestUtils.invokeMethod(mainClass, doubleExpression, 90500, -100500, -9000.00025));
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void doubleExpressionTrue1() throws Throwable {
         String message = String.format(MESSAGE_TEMPLATE, 5.0, 0.0001, 5.0);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, doubleExpression, 5.0, 0.0001, 5.0));
     }
 
-    @Test
+    @Test(timeout = 2000)
     public void doubleExpressionTrue2() throws Throwable {
         String message = String.format(MESSAGE_TEMPLATE, -5.0, 0.0001, -5.0);
         assertEquals(message, true, TestUtils.invokeMethod(mainClass, doubleExpression, -5.0, 0.0001, -5.0));

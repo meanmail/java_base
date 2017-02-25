@@ -28,7 +28,7 @@ public class MainTest {
                 Integer.TYPE, Integer.TYPE);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void moveRobotNormal() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
 
@@ -37,7 +37,7 @@ public class MainTest {
         assertEquals(1, robotConnectionManager.callCount());
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void moveRobotCloseException() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedOnClose();
@@ -50,7 +50,7 @@ public class MainTest {
         assertEquals(String.format("Expected one time close(), but was %d", closeCount), 1, closeCount);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void moveRobotTry2() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedOnClose();
@@ -64,7 +64,7 @@ public class MainTest {
         assertEquals(String.format("Expected one time close(), but was %d", closeCount), 1, closeCount);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void moveRobotTry3() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedConnectionCount(2);
@@ -77,7 +77,7 @@ public class MainTest {
         assertEquals(String.format("Expected one time close(), but was %d", closeCount), 1, closeCount);
     }
 
-    @Test(expected = RobotConnectionException.class)
+    @Test(expected = RobotConnectionException.class, timeout = 8000)
     public void moveRobotTry4() throws Throwable {
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();
         robotConnectionManager.setFailedOnClose();
@@ -94,7 +94,7 @@ public class MainTest {
     }
 
 
-    @Test
+    @Test(timeout = 8000)
     public void moveRobotException() throws Exception {
         RuntimeException expectedException = new RuntimeException();
         RobotConnectionManagerImpl robotConnectionManager = new RobotConnectionManagerImpl();

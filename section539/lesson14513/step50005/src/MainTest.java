@@ -50,7 +50,7 @@ public class MainTest {
                 Integer.TYPE);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void sample1() throws Throwable {
         Object mainInstance = mainClass.newInstance();
         String string = "I'm string";

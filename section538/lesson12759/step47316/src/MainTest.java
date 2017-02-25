@@ -24,7 +24,7 @@ public class MainTest {
                 Integer.TYPE, Integer.TYPE, Integer.TYPE);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void flipBitAllBitsInZero() throws Throwable {
         int value = 0;
         for (int i = 1; i <= 32; i++) {
@@ -35,7 +35,7 @@ public class MainTest {
         assertEquals(message, -1, value);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void flipBitAllBitsInAllOne() throws Throwable {
         int value = -1;
         for (int i = 1; i <= 32; i++) {

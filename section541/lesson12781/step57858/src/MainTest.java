@@ -10,14 +10,14 @@ import static org.junit.Assert.assertEquals;
  * @author meanmail
  */
 public class MainTest {
-    @Test
+    @Test(timeout = 8000)
     public void sample1() throws Throwable {
         String input = "Мама мыла-мыла-мыла раму!";
         String expected = "мыла\nмама\nраму";
         test(input, expected);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void sample2() throws Throwable {
         String input = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
                 "Sed sodales consectetur purus at faucibus. " +
@@ -39,7 +39,7 @@ public class MainTest {
         test(input, expected);
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void sample3() throws Throwable {
         String input = "Напишите программу, читающую из System.in текст в кодировке UTF-8, подсчитывающую в нем частоту появления слов, и в конце выводящую 10 наиболее часто встречающихся слов.\n" +
                 "\n" +

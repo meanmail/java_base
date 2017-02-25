@@ -35,7 +35,7 @@ public abstract class AbstractMainTest {
         outStream.close();
     }
 
-    @Test
+    @Test(timeout = 8000)
     public void mainSample() throws Throwable {
         try (ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes())) {
             outStream.reset();
