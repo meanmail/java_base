@@ -45,7 +45,7 @@ public class MainTest {
                 Object.class,
                 Object.class);
 
-        TestUtils.getConstructor(pairClass, new int[]{Modifier.PRIVATE, 0});
+        TestUtils.getConstructor(pairClass, new int[]{Modifier.PRIVATE, 0}, Object.class, Object.class);
 
         Object pair = TestUtils.invokeMethod(pairClass, of, 1, "hello");
 
