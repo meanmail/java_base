@@ -6,7 +6,7 @@
 # Как это использовать?
 
 - Запустите IntelliJ IDEA
-- Установите/Обновите плагин **Stepik Union** до версии 0.11 [подробнее](https://github.com/StepicOrg/intellij-plugins/wiki/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0)
+- Установите/Обновите плагин **Stepik Union** до последней версии (минимум 0.11) [подробнее](https://github.com/StepicOrg/intellij-plugins/wiki/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0)
 - Выбирете "File >> New >> Project from Version Control >> GitHub" (либо скачайте проект как zip, разархивируйте и откройте в IDEA, но перед открытием проекта плагин должен быть уже установлен)
 - Перейдите к нужному заданию.
 - Вставте код в нужные места (в файл **Main.java**, другие файлы редактировать не нужно)
